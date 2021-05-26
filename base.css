@@ -1,0 +1,103 @@
+/*Top "task bar" enlarge text*/
+.headerTabs.sectionTabs {
+  text-size-adjust: 110%;
+  font-size: 110%;
+}
+.pageTitle {
+  margin-top: auto; 
+  margin-bottom: auto;
+}
+.emby-tab-button {
+  padding: 1.75em 1.7em;
+}
+
+/*Accommodate mobile and set positions, I think*/
+.cardIndicators,
+.listItemIndicators {
+  right: 0.3em; 
+  top: 0.3em;
+}
+
+@media all and (min-width: 70em){
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+@media all and (max-width: 70em){
+  .cardOverlayButtonIcon {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .cardOverlayButton {
+    padding: 0.3em;
+  }
+}
+
+/*Media player*/
+.nowPlayingPageImage {
+  border: none;
+}
+
+.upNextDialog-countdownText {
+  color: white;
+}
+
+/*Narrow margins, theme main page*/
+.cardBox-bottompadded {
+    margin-bottom: 0.6em !important;
+}
+.itemsContainer > .card > .cardBox {
+    margin-right: 0.8em;
+}
+.raised.homeLibraryButton {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+.raised.homeLibraryButton:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+.raised.homeLibraryButton:hover {transition: filter 0.2s}
+.raised.homeLibraryButton {transition: filter 0.2s}
+.homeLibraryButton {
+    min-width: 12em;
+    margin: 0.4em;
+}
+
+/*ANIMATIONS*/
+/*Fade as images load*/
+.blurhash-canvas {
+    transition: 0.2s;
+}
+.cardImageContainer {
+    transition: 0.7s;
+}
+
+/*Hover background for buttons*/
+.button-flat:hover {
+	background: rgba(0,0,0,0.4);
+}
+.button-flat {
+  padding: .5em !important;
+  margin: .2em !important;
+}
+
+/*Shrink the mouseover chapter image when scrobbling*/
+.chapterThumb {
+    height: 14vh;
+    min-width: 14vh;
+}
+.chapterThumbText {
+    font-size: 1em;
+}
+.sliderBubble {
+  background: #0000;
+}
+
+/*Rating star, normally yellow*/
+.starIcon {
+    color: rgba(255,255,255,.8);
+}

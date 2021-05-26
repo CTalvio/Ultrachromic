@@ -1,0 +1,22 @@
+/*Theme dialogues, drop downs, toasts*/
+.dialog, 
+.toast {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.actionSheetMenuItem:hover {
+  background-color: rgba(0, 164, 220, 0.2);
+}
+.mainDrawer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navMenuOption:hover {
+  background: rgba(0, 164, 220, 0.2);
+}
+.formDialogHeader, .formDialogFooter {
+  background-color: #101010 !important;
+}
+.formDialogHeader.formDialogHeader-clear.justify-content-center,
+.formDialogFooter.formDialogFooter-clear.formDialogFooter-flex,
+.collapseContent {
+  background-color: #0000 !important;
+}

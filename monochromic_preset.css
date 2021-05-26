@@ -1,0 +1,181 @@
+@import url('https://ctalvio.github.io/Ultrachromic/jf_font.css');
+@import url('https://ctalvio.github.io/Ultrachromic/base.css');
+@import url('https://ctalvio.github.io/Ultrachromic/fixes.css');
+@import url('https://ctalvio.github.io/Ultrachromic/dark.css');
+@import url('https://ctalvio.github.io/Ultrachromic/smallercast.css');
+@import url('https://ctalvio.github.io/Ultrachromic/compactepisodes.css');
+@import url('https://ctalvio.github.io/Ultrachromic/transparentbanner.css');
+@import url('https://ctalvio.github.io/Ultrachromic/minimalisticlogin.css');
+@import url('https://ctalvio.github.io/Ultrachromic/fields.css');
+@import url('https://ctalvio.github.io/Ultrachromic/dialogues.css');
+
+:root {--rounding: 5px;}
+
+/*Modified progress bar, play and item menu buttons*/
+.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
+  border-radius: 0px !important; 
+  background: rgba(0,0,0,0.7);
+}
+
+.itemProgressBar {
+  height: 2000em;
+  background: #0000;
+}
+.playbackProgress>div {
+  background-color: rgba(255,255,255,0.75);
+}
+.transcodingProgress>div, .itemProgressBarForeground {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
+  border-radius: 0px !important; 
+  background: rgba(0,0,0,0);
+}
+
+/*Some themeing for the dashboard*/
+
+#user_usage_report_table,
+.detailTable {
+    background: rgba(0,0,0,.5);
+}
+.detailTableBodyRow-shaded {
+    background: #0000 !important;
+}
+
+.infoBanner {
+    background: #101010;
+}
+.navMenuOptionText {
+    margin-top: 0;
+}
+.backgroundProgress > div {
+    background-color: #0000;
+}
+
+.visualCardBox, .cardImageContainer {
+  box-shadow: none;
+}
+
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
+    background: rgba(120, 120, 120, 0.6);
+}
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__thumb {
+    background: white;
+}
+
+.dashboardSection h3 {
+  margin-left: 0.5em;
+}
+.sessionCardFooter {
+  border: none;
+}
+.paperList, 
+.visualCardBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.listItem-border {
+  border-color: rgba(255, 255, 255, 0) !important; 
+}
+fieldset {
+  border: 1px solid rgba(40, 40, 40, 0.8); 
+  border-radius: 0.4em;
+}
+
+/*Color theming*/
+
+/*Theme process progress ring*/
+.progressring-spiner {
+  border-color: rgba(var(--accent));
+  border-width: .35em;
+}
+.progressring {
+    margin: .4em;
+}
+.progressring-bg {
+   display: none;
+}
+
+
+/*Theme user setting tab buttons*/
+div[data-role="controlgroup"] a.ui-btn-active {
+	background: rgba(0, 0, 0, 0.5) !important;
+	color: white !important;
+}
+a[data-role="button"]:hover {
+    background: rgba(80, 80, 80, 0.8) !important;
+}
+
+div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
+	margin: 0 !important;
+}
+
+/*Theme media player*/
+
+.mdl-slider-background-lower {
+  background-color: rgb(255, 255, 255);
+}
+.mdl-slider::-moz-range-thumb {
+  background: rgb(255, 255, 255);
+}
+.mdl-slider::-ms-thumb {
+  background: rgb(255, 255, 255);
+}
+.mdl-slider::-webkit-slider-thumb {
+  background: rgb(255, 255, 255);
+}
+.iconOsdProgressInner {
+  background: rgb(255, 255, 255);
+}
+
+.videoOsdBottom {
+    background: rgba(0,0,0,.7);
+}
+.skinHeader-withBackground.osdHeader {
+    background: rgba(0,0,0,.7) !important;
+}
+
+/*Theme buttons and cards*/
+.navMenuOption-selected,
+.selectionCommandsPanel {
+  background: #101010 !important;
+}
+
+.paper-icon-button-light:hover,
+.raised.homeLibraryButton:hover,
+.button-flat:hover,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover,
+.selectLabelFocused,
+.inputLabelFocused,
+.textareaLabelFocused,
+.buttonActive,
+.button-link{
+  color: rgba(120, 120, 120, 0.6) !important;
+}
+
+#itemDetailPage .button-link {color: inherit !important;}
+
+.listItemIcon {
+    background: #0000 !important;
+}
+
+.raised,
+.fab,
+a[data-role="button"] {
+  background: rgba(40, 40, 40, 0.8) !important;
+	transition: all 0.2s !important;
+}
+
+.paper-icon-button-light:hover {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.raised:hover,
+.fab:hover,
+.navMenuOption:hover,
+.actionSheetMenuItem:hover {
+  background: rgba(80, 80, 80, 0.8) !important;
+}

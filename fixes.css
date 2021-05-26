@@ -1,0 +1,104 @@
+/*Change backdrop behaviour on mobile pre-10.7.0*/
+@media all and (max-width: 32em) {
+  .itemBackdrop {
+    width: 100vw!important; 
+    height: 100vh!important; 
+    position: fixed;
+  }
+  .detailPageWrapperContainer {
+    margin-top: 5em;
+  }
+  .itemBackdrop {
+    filter: blur(45px) saturate(200%) contrast(160%) brightness(25%);
+  }
+}
+
+/*Media player*/
+.startTimeText, .endTimeText {
+    width: 3.4em;
+    display: block;
+    text-align: center;
+}
+.osdTitle {
+  margin-left: 0.5em;
+}
+
+.videoOsdBottom {
+    padding-top: 1em;
+}
+
+.skinHeader-withBackground.osdHeader {
+    height: 5em;
+}
+
+/*Accommodate ultrawide aspect ratios*/
+@media (min-aspect-ratio: 1.98/1) {
+  .detailImageContainer .card {
+    width: 21vw; 
+  }
+  .detailPagePrimaryContainer {
+    padding-left: 28.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 28.45vw;
+  }
+}
+@media (min-aspect-ratio: 2.7/1) {
+  .detailImageContainer .card {
+    width: 16vw; 
+  }
+  .detailPagePrimaryContainer {
+    padding-left: 23.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 23.45vw;
+  }
+}
+
+/*Fix weird shevron off centering*/
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+ padding-top:0em;
+}
+.sectionTitle {
+	margin-left: .4em !important;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
+}
+.sectionTitleTextButton > .material-icons {
+    margin: 0;
+}
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding-top: .2em;
+}
+
+/*Fix the UI shifting around*/
+.nowPlayingBarCurrentTime {
+    width: 6em;
+}
+.osdTextContainer {
+    margin: 0 !important;
+    margin-top: 0.2em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+/*Fix top right user icon when using a profile image*/
+.headerUserButtonRound {
+  border-radius: 50px !important;
+}
+
+/*Improve some menu alignments*/
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
+.listItem {
+  padding-left: 1em;
+}

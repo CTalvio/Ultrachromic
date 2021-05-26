@@ -1,0 +1,41 @@
+/*Size episode preview images in a more compact way*/
+.listItem:hover {
+	transition: 0.2s;
+}
+.listItemImage.listItemImage-large.itemAction.lazy {
+  transition: filter 0.2s
+}
+.listItemImageButton-icon {
+  padding: 0;
+}
+.secondary.listItem-overview.listItemBodyText {
+  height: 61px; 
+  margin: 0;
+}
+.listItemImageButton {
+  margin: auto; 
+  font-size: 1.6em !important;
+}
+@media all and (min-width: 100em){
+  .listItemImage.listItemImage-large.itemAction.lazy {
+    height: 110px;
+  }
+  .listItem-content {
+    height: 115px;
+  }
+  .secondary.listItem-overview.listItemBodyText {
+    height: 4em; 
+    margin: 0;
+  }
+}
+@media all and (max-width: 100em){
+  .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
+  .listItem-content {height: 85px;}
+  .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+}
+
+.missingIndicator, .unairedIndicator {
+    background: #ae3030eb;
+    padding: .3em .6em;
+    color: #fff;
+}

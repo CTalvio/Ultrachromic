@@ -1,0 +1,34 @@
+/*Tweak series/movie/album title screen*/
+.detailImageContainer .card {
+  position:fixed;
+}
+
+.mainDetailButtons {
+	font-size: 120%;
+}
+@media all and (max-width: 100em){
+  .mainDetailButtons {
+	  font-size: 155%;
+	}
+}
+
+.detailSectionContent {
+  max-width: 66em;
+}
+.trackSelections {
+  max-width: 22em;
+}
+.detailLogo {
+  display: none;
+}
+.detailPagePrimaryContainer {
+  background: rgba(0,0,0,0) !important;
+}
+@media all and (min-width: 32em){
+  .itemBackdrop {
+    display: none;
+  }
+	.layout-desktop .detailRibbon {
+    margin-top: 13vh;
+	}
+}

@@ -1,0 +1,20 @@
+/*Card indicators*/
+.cardIndicators,
+.listItemIndicators {
+  right: 0;
+  top: 0;
+}
+.innerCardFooter {
+  border-radius: 0px var(--rounding) !important;
+  box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.3);
+}
+.countIndicator, .playedIndicator {
+  border-radius: 0px var(--rounding) !important;
+  box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+.countIndicator {
+  background: rgba(var(--accent),0.8);
+}
+.playedIndicator, .innerCardFooter {
+  background: rgba(0,0,0,0.4)
+}

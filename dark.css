@@ -1,0 +1,209 @@
+/*Blur backdrops, feel free to edit the intensity of the blur/saturation/dimming*/
+.backdropImage {
+  filter: blur(60px) saturate(200%) contrast(160%) brightness(25%);
+}
+.backgroundContainer.withBackdrop {
+  background-color: rgba(0,0,0,0);
+}
+
+/*Episode hover*/
+.listItem:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+/*Homepage modifications, transparent footerplayer and fixed sectiontitles*/
+.appfooter {
+	background: rgba(0,0,0,0.9);
+}
+
+/*Theme the library scan progress bar*/
+progress {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+progress::-webkit-progress-bar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 0px solid rgba(255, 255, 255, 0.22);
+}
+progress::-moz-progress-bar {
+  background-color: rgba(255,255,255,0.75);
+}
+progress::-webkit-progress-value {
+  background-color: rgba(255,255,255,0.75);
+}
+#divRunningTasks span {
+  color: rgba(255,255,255,0.75) !important;
+}
+.taskProgressOuter {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.taskProgressInner {
+  background: rgba(255,255,255,0.75) !important;
+}
+#scheduledTasksPage span {
+  color: rgba(255,255,255,0.75) !important;
+}
+
+/*Login background*/
+#loginPage {
+  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
+  background-size: cover !important;
+}
+
+/*Make watched icon, footer on chapter thumnails (and other things), and count indicator dark and transparent*/
+.innerCardFooter,
+.countIndicator, 
+.playedIndicator {
+  background: rgba(0,0,0,0.4); 
+  box-shadow: none;
+}
+.countIndicator {
+  box-shadow: none;
+}
+
+/*Modify subtitle settings page*/
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,#444,#111) !important;
+}
+
+/*Affects blurhash to remove the saturated colors to fit overall look*/
+.blurhash-canvas {
+	filter: opacity(60%) saturate(60%);
+}
+
+/*Colors for loading spinner, placeholders, scroll bars*/
+.mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
+.mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
+.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
+.mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #0000;
+}
+::-webkit-scrollbar-corner {
+  background-color: #0000;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120,120,120,0.6) !important;
+  border-radius: var(--rounding);
+}
+
+* {
+  scrollbar-color: rgba(120,120,120,0.6) #0000 !important;
+}
+
+.defaultCardBackground1 {
+	background-color: #0a0a0a;
+}
+.defaultCardBackground2 {
+	background-color: #141414;
+}
+.defaultCardBackground3 {
+	background-color: #212121;
+}
+.defaultCardBackground4 {
+	background-color: #333333;
+}
+.defaultCardBackground5 {
+	background-color: #666666;
+}
+
+/*Theme syncplay*/
+.syncPlayIconCircle {
+  color: rgba(255,255,255,1) !important;
+  text-shadow: none !important;
+}
+
+@-webkit-keyframes pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@keyframes pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@-webkit-keyframes infinite-pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@keyframes infinite-pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
