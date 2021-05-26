@@ -1,0 +1,26 @@
+@import url('https://ctalvio.github.io/Kaleidochromic/default_style.css');
+@import url('https://ctalvio.github.io/Monochromic/improve-performance_style.css');
+@import url('https://ctalvio.github.io/Kaleidochromic/alternate-itempage_style.css');
+@import url('https://ctalvio.github.io/Kaleidochromic/backdrop-hack_style.css');
+
+:root {--rounding: 12px;}
+
+.nowPlayingBarCurrentTime {
+    margin: 0 !important;
+    padding-left: 1.5em !important;
+    width: 10em;
+}
+
+.videoIndicator {
+  border-radius: 0px var(--rounding) !important;
+  box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.4)
+}
+.indicatorIcon {
+  font-size: 1.3em;
+  color: rgba(255,255,255,0.75);
+}
+
+.sessionNowPlayingInnerContent {
+    background: rgba(0,0,0,.55);
+}
