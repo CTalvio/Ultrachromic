@@ -102,6 +102,10 @@
     color: rgba(255,255,255,.8);
 }
 
+/*Remove background on some icons*/
+.listItemIcon {
+    background: #0000 !important;
+}
 
 /*Everything below is from customcolor add-on*/
 .raised:hover, 
