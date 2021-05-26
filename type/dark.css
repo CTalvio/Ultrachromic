@@ -72,6 +72,48 @@ progress::-webkit-progress-value {
 	filter: opacity(60%) saturate(60%);
 }
 
+/*Dash and general UI styling*/
+.navMenuOption-selected, .selectionCommandsPanel {
+    background: #101010 !important;
+}
+.mainDrawer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.raised,
+.fab,
+a[data-role="button"] {
+  background: rgba(40, 40, 40, 0.8) !important;
+	transition: all 0.2s !important;
+}
+.raised:hover,
+.fab:hover,
+.navMenuOption:hover,
+.actionSheetMenuItem:hover {
+  background: rgba(80, 80, 80, 0.8) !important;
+}
+.paper-icon-button-light:hover {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.navMenuOption-selected,
+.selectionCommandsPanel {
+  background: #101010 !important;
+}
+
+.paper-icon-button-light:hover,
+.raised.homeLibraryButton:hover,
+.button-flat:hover,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover,
+.selectLabelFocused,
+.inputLabelFocused,
+.textareaLabelFocused,
+.buttonActive,
+.button-link{
+  color: rgba(120, 120, 120, 0.6) !important;
+}
+
 /*Colors for loading spinner, placeholders, scroll bars*/
 .mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
 .mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}

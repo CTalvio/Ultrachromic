@@ -136,46 +136,9 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 }
 
 /*Theme buttons and cards*/
-.navMenuOption-selected,
-.selectionCommandsPanel {
-  background: #101010 !important;
-}
-
-.paper-icon-button-light:hover,
-.raised.homeLibraryButton:hover,
-.button-flat:hover,
-.playstatebutton-icon-played,
-.ratingbutton-icon-withrating,
-.paper-icon-button-light:hover:not(:disabled),
-.emby-tab-button:hover,
-.selectLabelFocused,
-.inputLabelFocused,
-.textareaLabelFocused,
-.buttonActive,
-.button-link{
-  color: rgba(120, 120, 120, 0.6) !important;
-}
 
 #itemDetailPage .button-link {color: inherit !important;}
 
-.listItemIcon {
-    background: #0000 !important;
-}
 
-.raised,
-.fab,
-a[data-role="button"] {
-  background: rgba(40, 40, 40, 0.8) !important;
-	transition: all 0.2s !important;
-}
 
-.paper-icon-button-light:hover {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
 
-.raised:hover,
-.fab:hover,
-.navMenuOption:hover,
-.actionSheetMenuItem:hover {
-  background: rgba(80, 80, 80, 0.8) !important;
-}
