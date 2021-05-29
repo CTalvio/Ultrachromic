@@ -2,16 +2,6 @@
 .detailImageContainer .card {
   position:fixed;
 }
-
-.mainDetailButtons {
-	font-size: 120%;
-}
-@media all and (max-width: 100em){
-  .mainDetailButtons {
-	  font-size: 155%;
-	}
-}
-
 .detailSectionContent {
   max-width: 66em;
 }

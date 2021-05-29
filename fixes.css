@@ -13,6 +13,16 @@
   }
 }
 
+/*Enlarge button row on item page, even more on mobile*/
+.mainDetailButtons {
+	font-size: 120%;
+}
+@media all and (max-width: 100em){
+  .mainDetailButtons {
+	  font-size: 155%;
+	}
+}
+
 /*Media player*/
 .startTimeText, .endTimeText {
     width: 3.4em;

@@ -79,7 +79,8 @@
 	color: #00a4dc !important;
 }
 .button-flat {
-  margin: .2em !important;
+    margin: .2em !important;
+    padding: .85em !important;
 }
 .dashboardSection h3 {
     margin: .5em .0em .5em .5em;
