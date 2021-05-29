@@ -1,6 +1,8 @@
 /*Rounded corners on pretty much everything*/
 
-
+.detailButton {
+  border-radius: 50%;
+}
 
 progress {
   border-radius: var(--rounding);
