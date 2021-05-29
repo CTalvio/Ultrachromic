@@ -1,0 +1,111 @@
+/*Title text buttons*/
+button-flat:hover {
+    color: rgba(var(--accent)) !important;
+}
+
+.raised:hover, 
+.fab:hover,
+a[data-role="button"]:hover {
+  background: rgba(var(--accent),0.5) !important;
+}
+
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
+}
+
+.navMenuOption-selected {
+  color: rgba(var(--accent));
+}
+.mdl-slider-background-lower {
+  background-color: rgba(var(--accent));
+}   
+
+.playbackProgress>div {
+  background-color: rgba(var(--accent),0.75);
+}
+progress::-moz-progress-bar {
+  background-color: rgba(var(--accent),0.75);
+}
+progress::-webkit-progress-value {
+  background-color: rgba(var(--accent),0.75);
+}
+.taskProgressInner {
+  background: rgba(var(--accent),0.75) !important;
+}
+
+.transcodingProgress>div, 
+.itemProgressBarForeground {
+  background-color: rgba(var(--accent),0.35);
+}
+
+.mdl-slider-background-lower {
+  background-color: rgb(var(--accent));
+}
+.mdl-slider::-moz-range-thumb {
+  background: rgb(var(--accent));
+}
+.mdl-slider::-ms-thumb {
+  background: rgb(var(--accent));
+}
+.mdl-slider::-webkit-slider-thumb {
+  background: rgb(var(--accent));
+}
+.iconOsdProgressInner {
+  background: rgb(var(--accent));
+}
+
+.paper-icon-button-light:hover,
+.raised.homeLibraryButton:hover,
+.button-flat:hover,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover,
+.selectLabelFocused,
+.inputLabelFocused,
+.textareaLabelFocused,
+.buttonActive,
+.button-link {
+  color: rgba(var(--accent)) !important;
+}
+
+#itemDetailPage .button-link {color: inherit !important;}
+
+.navMenuOption:hover,
+.actionSheetMenuItem:hover {
+  background-color: rgba(var(--accent),0.5) !important;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.emby-input:focus,
+.itemSelectionPanel {
+  border: 0.01em solid rgba(var(--accent),0.5) !important;
+}
+
+.upNextDialog-countdownText {
+  color: rgba(var(--accent));
+}
+
+.mdl-spinner__layer-1 {
+  border-color: rgba(var(--accent));
+}
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
+  background: rgba(var(--accent), 0.5);
+}
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__thumb {
+  background: rgba(var(--accent));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--accent),0.8) !important;
+}
+* {
+  scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
+}
+
+/* Syncplay theming*/
+.syncPlayIconCircle {
+  color: rgba(var(--accent),1) !important;
+  text-shadow: none !important;

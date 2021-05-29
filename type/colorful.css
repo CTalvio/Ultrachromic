@@ -84,9 +84,6 @@ body, h1, h2, h3, h4, .textActionButton, .emby-button-foreground  {
 .paperList, .visualCardBox {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.listItem-border {
-    border-color: rgba(255, 255, 255, 0) !important;
-}
 
 /*Change look of fields*/
 .infoBanner {

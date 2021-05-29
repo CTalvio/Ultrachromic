@@ -1,0 +1,7 @@
+/*Card indicators style 1 dark, matches footer style for scene times*/
+.innerCardFooter,
+.countIndicator,
+.playedIndicator {
+  background: rgba(0,0,0,0.4); 
+  box-shadow: none;
+}
