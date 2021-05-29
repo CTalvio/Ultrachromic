@@ -1,5 +1,7 @@
 /*Rounded corners on pretty much everything*/
 
+
+
 progress {
   border-radius: var(--rounding);
 }
@@ -49,7 +51,6 @@ progress::-webkit-progress-value {
 .listItemImage,
 .listItemImageButton,
 .listItemButton,
-.headerButton,
 .innerCardFooter,
 .blurhash-canvas,
 .dialog,

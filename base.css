@@ -75,7 +75,7 @@
 
 /*Hover background for section title buttons*/
 .button-flat:hover {
-	background: rgba(0,0,0,0.4);
+	background: rgba(0, 164, 220, 0.2);
 	color: #00a4dc !important;
 }
 .button-flat {
