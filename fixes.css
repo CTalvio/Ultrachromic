@@ -98,6 +98,9 @@
 }
 
 /*Improve some menu alignments*/
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
 .formDialogContent {
   margin-bottom: 6.2em;
 }
