@@ -6,6 +6,14 @@
   background-color: rgba(0,0,0,0);
 }
 
+/*Colors for title_2*/
+.layout-desktop .detailRibbon {
+  background: rgba(0,0,0,.2) !important;
+}
+.itemBackdrop::after {
+  background: rgba(0,0,0,.5) !important;
+}
+
 /*Episode hover*/
 .listItem:hover {
 	background: rgba(0, 0, 0, 0.4);

@@ -14,6 +14,9 @@
 .detailPagePrimaryContainer {
   background: rgba(0,0,0,0) !important;
 }
+.layout-desktop .detailRibbon {
+  background: rgba(0,0,0,0) !important;
+}
 @media all and (min-width: 32em){
   .itemBackdrop {
     display: none;
