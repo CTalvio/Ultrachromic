@@ -1,9 +1,52 @@
-/*Blur backdrops, feel free to edit the intensity of the blur/saturation/dimming*/
-.backdropImage {
-  filter: blur(60px) saturate(200%) contrast(160%) brightness(25%);
+/*This file contains color and style changes for the dark theme type*/
+
+/*Some themeing for the dashboard*/
+
+#user_usage_report_table,
+.detailTable {
+    background: rgba(0,0,0,.5);
 }
-.backgroundContainer.withBackdrop {
-  background-color: rgba(0,0,0,0);
+.detailTableBodyRow-shaded {
+    background: #0000 !important;
+}
+
+.infoBanner {
+    background: #101010;
+}
+.navMenuOptionText {
+    margin-top: 0;
+}
+.backgroundProgress > div {
+    background-color: #0000;
+}
+
+.visualCardBox, .cardImageContainer {
+  box-shadow: none;
+}
+
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
+    background: rgba(120, 120, 120, 0.6);
+}
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__thumb {
+    background: white;
+}
+
+.dashboardSection h3 {
+  margin-left: 0.5em;
+}
+.sessionCardFooter {
+  border: none;
+}
+.paperList, 
+.visualCardBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.listItem-border {
+  border-color: rgba(255, 255, 255, 0) !important; 
+}
+fieldset {
+  border: 1px solid rgba(40, 40, 40, 0.8); 
+  border-radius: 0.4em;
 }
 
 /*Colors for title_2*/
@@ -122,43 +165,6 @@ a[data-role="button"] {
   color: rgba(120, 120, 120, 0.6) !important;
 }
 
-/*Colors for loading spinner, placeholders, scroll bars*/
-.mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
-.mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
-.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
-.mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
-
-::-webkit-scrollbar-track-piece {
-  background-color: #0000;
-}
-::-webkit-scrollbar-corner {
-  background-color: #0000;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(120,120,120,0.6) !important;
-  border-radius: var(--rounding);
-}
-
-* {
-  scrollbar-color: rgba(120,120,120,0.6) #0000 !important;
-}
-
-.defaultCardBackground1 {
-	background-color: #0a0a0a;
-}
-.defaultCardBackground2 {
-	background-color: #141414;
-}
-.defaultCardBackground3 {
-	background-color: #212121;
-}
-.defaultCardBackground4 {
-	background-color: #333333;
-}
-.defaultCardBackground5 {
-	background-color: #666666;
-}
-
 /*Theme syncplay*/
 .syncPlayIconCircle {
   color: rgba(255,255,255,1) !important;
@@ -256,4 +262,41 @@ a[data-role="button"] {
   background:rgba(0,0,0,.3);
   box-shadow:0 0 0 0 rgba(0,0,0,0)
  }
+}
+
+/*Colors for loading spinner, placeholders, scroll bars*/
+.mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
+.mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
+.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
+.mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #0000;
+}
+::-webkit-scrollbar-corner {
+  background-color: #0000;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120,120,120,0.6) !important;
+  border-radius: var(--rounding);
+}
+
+* {
+  scrollbar-color: rgba(120,120,120,0.6) #0000 !important;
+}
+
+.defaultCardBackground1 {
+	background-color: #0a0a0a;
+}
+.defaultCardBackground2 {
+	background-color: #141414;
+}
+.defaultCardBackground3 {
+	background-color: #212121;
+}
+.defaultCardBackground4 {
+	background-color: #333333;
+}
+.defaultCardBackground5 {
+	background-color: #666666;
 }

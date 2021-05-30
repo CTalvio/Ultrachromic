@@ -1,16 +1,11 @@
-/*This file contains color changes for the colorful theme type*/
+/*This file contains color and style changes for the colorful theme type*/
+:root {--accent: 98, 121, 205;}
 
 .dialog,
 .mainDrawer,
 .toast,
 .appfooter {
     background-color: rgba(8, 8, 8, 0.85);
-}
-@supports (backdrop-filter: blur(15px)) {
-  .dialog, .mainDrawer, .toast, .appfooter {
-    backdrop-filter: blur(15px);
-    background-color: rgba(0, 0, 0, 0.35);
-  }
 }
 
 /*Accenting*/
@@ -53,23 +48,7 @@ a[data-role="button"] {
 	transition: all 0.2s !important;
 }
 
-/*Glow accent*/
-.raised.homeLibraryButton {
-    box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
-    border: solid 1px rgba(var(--accent),0) !important;
-}
-.cardOverlayContainer:hover,
-.dialog,
-.toast,
-.raised.homeLibraryButton:hover {
-  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-}
-.cardOverlayContainer {
-  border: solid 1px rgba(var(--accent),0.0) !important;
-}
-
-/*Various box-shadows*/
+/*Various box-shadows, might be related to glowstyle*/
 .cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
     box-shadow: none !important;
 }
@@ -85,48 +64,7 @@ body, h1, h2, h3, h4, .textActionButton, .emby-button-foreground  {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*Change look of fields*/
-.infoBanner {
-    background: rgba(var(--accent),0.15) !important;
-}
-fieldset {
-    border: 1px solid rgba(var(--accent), 0.3);
-}
-.checkboxOutline,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor {
-  border: none !important;
-  background: rgba(0, 0, 0, 0.5); 
-}
-#itemDetailPage .emby-select-withcolor {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-/*Change look of in-focus fields*/
-.emby-checkbox:checked + span + .checkboxOutline,
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus,
-.itemSelectionPanel {
-  border: none !important;
-  background: rgba(var(--accent), 0.25) !important;
-}
-.checkboxIcon {
-    color: rgba(var(--accent));
-}
-
-progress {
-  border: 0px solid rgba(255, 255, 255, 0.22);
-}
-progress::-webkit-progress-bar {
-  border: 0px solid rgba(255, 255, 255, 0.22);
-}
-.taskProgressOuter {
-  border: 0px solid rgba(255, 255, 255, 0.22);
-}
-
-/*Colors for loading spinner and other stuff*/
+/*Colors for loading spinner, placeholders, scroll bars*/
 .mdl-spinner__layer-1 {border-color: rgba(var(--accent), 1);}
 .mdl-spinner__layer-2 {border-color: rgba(var(--accent), .8);}
 .mdl-spinner__layer-3 {border-color: rgba(var(--accent), .6);}

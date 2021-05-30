@@ -1,0 +1,40 @@
+/*Change look of fields*/
+.infoBanner {
+    background: rgba(var(--accent),0.15) !important;
+}
+fieldset {
+    border: 1px solid rgba(var(--accent), 0.3);
+}
+.checkboxOutline,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor {
+  border: none !important;
+  background: rgba(0, 0, 0, 0.5); 
+}
+#itemDetailPage .emby-select-withcolor {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*Change look of in-focus fields*/
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.itemSelectionPanel {
+  border: none !important;
+  background: rgba(var(--accent), 0.25) !important;
+}
+.checkboxIcon {
+    color: rgba(var(--accent));
+}
+
+progress {
+  border: 0px solid rgba(255, 255, 255, 0.22);
+}
+progress::-webkit-progress-bar {
+  border: 0px solid rgba(255, 255, 255, 0.22);
+}
+.taskProgressOuter {
+  border: 0px solid rgba(255, 255, 255, 0.22);
+}

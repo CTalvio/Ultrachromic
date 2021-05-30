@@ -1,0 +1,15 @@
+/*Glow accent*/
+.raised.homeLibraryButton {
+    box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
+    border: solid 1px rgba(var(--accent),0) !important;
+}
+.cardOverlayContainer:hover,
+.dialog,
+.toast,
+.raised.homeLibraryButton:hover {
+  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
+}
+.cardOverlayContainer {
+  border: solid 1px rgba(var(--accent),0.0) !important;
+}
