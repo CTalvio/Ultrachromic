@@ -1,0 +1,8 @@
+/*Flip indicator colors*/
+
+.countIndicator {
+  background: rgba(var(--accent),0.8);
+}
+.playedIndicator {
+    background: rgba(255, 255, 255, 0.3);
+}

@@ -1,3 +1,5 @@
+:root {--indicator: 0, 164, 220;}
+
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;

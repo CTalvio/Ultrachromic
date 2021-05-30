@@ -1,7 +1,14 @@
 /*Card indicators style 1 dark, matches footer style for scene times*/
-.innerCardFooter,
-.countIndicator,
-.playedIndicator {
-  background: rgba(0,0,0,0.4); 
+:root {--indicator: 0, 0, 0;}
+
+.countIndicator {
+  background: rgba(var(--indicator),0.4); 
   box-shadow: none;
+}
+.playedIndicator, .innerCardFooter {
+  background: rgba(0,0,0,0.4)
+  box-shadow: none;
+}
+.innerCardFooter {
+    margin: .5em;
 }

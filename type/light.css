@@ -24,10 +24,6 @@
 	color: rgba(var(--accent)) !important;
 }
 
-.countIndicator {
-  background: rgba(var(--accent),0.8);
-}
-
 .button-flat:hover {
 	background: rgba(var(--accent),0.55);
 }
@@ -311,10 +307,6 @@ h4,
 
 .navMenuOption-selected, .selectionCommandsPanel {
     background: #cecece !important;
-}
-
-.playedIndicator {
-    background: rgba(255, 255, 255, 0.3);
 }
 
 .nowPlayingContextMenu, .nowPlayingPlaylist, html {

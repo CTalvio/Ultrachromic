@@ -1,4 +1,5 @@
 /*Card indicators style 2 colorful, matches footer style for scene times*/
+
 .cardIndicators,
 .listItemIndicators {
   right: 0;
@@ -13,7 +14,7 @@
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 .countIndicator {
-  background: rgba(var(--accent),0.8);
+  background: rgba(var(--indicator),0.8);
 }
 .playedIndicator, .innerCardFooter {
   background: rgba(0,0,0,0.4)
