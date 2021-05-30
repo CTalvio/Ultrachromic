@@ -1,6 +1,7 @@
 /*This file contains color and style changes for the colorful theme type*/
 :root {--accent: 98, 121, 205;}
 :root {--indicator: var(--accent);}
+:root {--selection: var(--accent);}
 
 .dialog,
 .mainDrawer,

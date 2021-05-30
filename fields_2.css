@@ -1,9 +1,9 @@
-/*Change look of fields*/
+/*No borders, background highlights*/
 .infoBanner {
-    background: rgba(var(--accent),0.15) !important;
+    background: rgba(var(--selection), 0.15) !important;
 }
 fieldset {
-    border: 1px solid rgba(var(--accent), 0.3);
+    border: 1px solid rgba(var(--selection), 0.3);
 }
 .checkboxOutline,
 .emby-input,
@@ -23,12 +23,13 @@ fieldset {
 .emby-select-withcolor:focus,
 .itemSelectionPanel {
   border: none !important;
-  background: rgba(var(--accent), 0.25) !important;
+  background: rgba(var(--selection), 0.25) !important;
 }
 .checkboxIcon {
-    color: rgba(var(--accent));
+    color: rgba(var(--selection), 1);
 }
 
+/*Progress bars*/
 progress {
   border: 0px solid rgba(255, 255, 255, 0.22);
 }

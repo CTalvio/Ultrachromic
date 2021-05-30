@@ -1,5 +1,4 @@
-/*Card indicators style 1 dark, matches footer style for scene times*/
-:root {--indicator: 0, 0, 0;}
+/*Card indicators style normal*/
 
 .countIndicator {
   background: rgba(var(--indicator),0.4); 

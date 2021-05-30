@@ -1,4 +1,5 @@
 :root {--indicator: 0, 164, 220;}
+:root {--selection: 0, 164, 220;}
 
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
@@ -9,6 +10,21 @@
   margin-top: auto; 
   margin-bottom: auto;
 }
+
+/*Theme process progress ring*/
+.progressring-spiner {
+  border-color: rgba(var(--accent));
+  border-width: .35em;
+}
+.progressring {
+    margin: .4em;
+}
+.progressring-bg {
+   display: none;
+}
+
+/*Theme link color*/
+#itemDetailPage .button-link {color: inherit !important;}
 
 /*Accommodate mobile and align buttons and indicators*/
 .cardIndicators,

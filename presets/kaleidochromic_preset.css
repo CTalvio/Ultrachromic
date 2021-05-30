@@ -4,10 +4,12 @@
 @import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
 @import url('https://ctalvio.github.io/Ultrachromic/smallercast.css');
 @import url('https://ctalvio.github.io/Ultrachromic/compactepisodes.css');
-@import url('https://ctalvio.github.io/Ultrachromic/transparentbanner.css');
+@import url('https://ctalvio.github.io/Ultrachromic/transparentbanner-dashboard.css');
 @import url('https://ctalvio.github.io/Ultrachromic/minimalisticlogin.css');
-@import url('https://ctalvio.github.io/Ultrachromic/fields.css');
+@import url('https://ctalvio.github.io/Ultrachromic/fields_2.css');
 @import url('https://ctalvio.github.io/Ultrachromic/dialogues.css');
+@import url('https://ctalvio.github.io/Ultrachromic/indicator_2.css');
+@import url('https://ctalvio.github.io/Ultrachromic/rounding.css');
 
 :root {--rounding: 12px;}
 

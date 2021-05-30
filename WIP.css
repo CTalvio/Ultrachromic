@@ -29,19 +29,6 @@
 }
 
 
-/*Color theming*/
-
-/*Theme process progress ring*/
-.progressring-spiner {
-  border-color: rgba(var(--accent));
-  border-width: .35em;
-}
-.progressring {
-    margin: .4em;
-}
-.progressring-bg {
-   display: none;
-}
 
 
 /*Theme user setting tab buttons*/
@@ -58,7 +45,6 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 }
 
 /*Theme media player*/
-
 .mdl-slider-background-lower {
   background-color: rgb(255, 255, 255);
 }
@@ -82,9 +68,7 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
     background: rgba(0,0,0,.7) !important;
 }
 
-/*Theme buttons and cards*/
 
-#itemDetailPage .button-link {color: inherit !important;}
 
 /*From Kaleido*/
 /*Cosmetic fixes for quirks (drop down padding and dialogue hover rounding)*/
