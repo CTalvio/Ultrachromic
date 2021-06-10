@@ -23,13 +23,37 @@ This line is required.
 @import url('https://ctalvio.github.io/Ultrachromic/base.css');
 ```
 
+### Choose type
+
+Dark, light, and colorful type. You must use one of these.
+
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/type/dark.css');
+@import url('https://ctalvio.github.io/Ultrachromic/type/light.css');
+@import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
+```
 
 ### Recommended
+
+fixes.css contains various small tweaks all over the JF UI, an alignment here, a size tweak there. That kind of thing. jf_font.css will make JF use the same font as it's logo, for everything. You can use both, one or none of these.
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/fixes.css');
 @import url('https://ctalvio.github.io/Ultrachromic/jf_font.css');
 ```
 
-### Choose style
+### Smaller cast list
 
+A smaller, square aspect ratio style cast list.
+
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/smallercast.css');
+```
+
+### More compact episode list
+
+A more easily scrolled episode list.
+
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/compactepisodes.css');
+```
