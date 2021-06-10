@@ -1,6 +1,8 @@
 # Ultrachromic
 The final form, the true evolution of the chromic theme saga!
 
+THIS IS WORK IN PROGRESS, NOT FINISHED
+
 To use this theme, it is recommended you simply use the Skin Manager Plugin https://github.com/danieladov/jellyfin-plugin-skin-manager, once installed select the Ultrachromic theme, make any changes you want, and apply it.
 
 Alternatively, use one of the presets, but this will not allow for as much customization.
