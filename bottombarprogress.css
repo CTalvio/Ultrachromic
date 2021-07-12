@@ -1,0 +1,12 @@
+.itemProgressBar {
+  height: 5px;
+  background: rgba(0,0,0,.5);
+}
+
+.playbackProgress>div, .itemProgressBarForeground {
+    background-color: rgba(var(--accent), 0.75) !important;
+}
+
+.transcodingProgress>div {
+    background-color: rgba(var(--accent), 0.35) !important;
+}
