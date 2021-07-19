@@ -1,7 +1,4 @@
 /*Size episode preview images in a more compact way*/
-.listItem:hover {
-	transition: 0.2s;
-}
 .listItemImage.listItemImage-large.itemAction.lazy {
   transition: filter 0.2s
 }

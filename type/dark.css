@@ -58,14 +58,13 @@ fieldset {
   background: rgba(0,0,0,.5) !important;
 }
 
-/*Episode hover*/
-.listItem:hover {
-	background: rgba(0, 0, 0, 0.4);
-}
 
 /*Homepage modifications, transparent footerplayer and fixed sectiontitles*/
 .appfooter {
 	background: rgba(0,0,0,0.9);
+}
+.button-flat:hover {
+	background: rgba(0,0,0,0.4);
 }
 
 /*Theme the library scan progress bar*/

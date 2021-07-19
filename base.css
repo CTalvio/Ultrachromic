@@ -68,6 +68,31 @@
   color: white;
 }
 
+/*Shrink the mouseover chapter image when scrobbling, still media player*/
+.chapterThumb {
+    height: 14vh;
+    min-width: 14vh;
+	box-shadow: 0 0 1.9vh #000;
+}
+.chapterThumbText {
+    font-size: 1em;
+}
+.sliderBubble {
+  background: #0000;
+}
+.chapterThumbTextContainer {
+    right: auto;
+	bottom: 4px;
+	padding: .25em 0.7em;
+}
+.chapterThumbContainer {
+    box-shadow: 0 0 1.9vh #000;
+}
+.sliderBubble {
+    -webkit-transform: translate3d(-50%,-108%,0);
+    transform: translate3d(-50%,-108%,0);
+}
+
 /*Narrow margins, theme main page*/
 .cardBox-bottompadded {
     margin-bottom: 0.6em !important;
@@ -86,6 +111,13 @@
 .homeLibraryButton {
     min-width: 12em;
     margin: 0.4em;
+}
+.listItem:hover {
+    transition: 0.2s;
+    background: rgba(0, 0, 0, 0.4);
+}
+.visualCardBox, .cardImageContainer {
+    box-shadow: none;
 }
 
 /*ANIMATIONS*/
@@ -113,18 +145,6 @@
     margin-top: .5em;
     margin-bottom: .5em;
     margin-right: .2em;
-}
-
-/*Shrink the mouseover chapter image when scrobbling*/
-.chapterThumb {
-    height: 14vh;
-    min-width: 14vh;
-}
-.chapterThumbText {
-    font-size: 1em;
-}
-.sliderBubble {
-  background: #0000;
 }
 
 /*Rating star, normally yellow*/
