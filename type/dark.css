@@ -165,6 +165,9 @@ a[data-role="button"] {
 .button-link{
   color: rgba(120, 120, 120, 0.6) !important;
 }
+progress {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
 
 /*Theme syncplay*/
 .syncPlayIconCircle {

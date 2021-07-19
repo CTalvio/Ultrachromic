@@ -65,6 +65,18 @@
   }
 }
 
+/*Tweak entry field padding and alignment/sizes*/
+.emby-input,
+.emby-textarea {
+  padding: .4em .55em;
+}
+.emby-select {
+  padding: .35em 1.9em .35em .35em;
+}
+.selectArrow {
+    margin-top: 1.05em;
+}
+
 /*Fix weird shevron off centering*/
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
  padding-top:0em;

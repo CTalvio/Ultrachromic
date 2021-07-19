@@ -11,6 +11,12 @@
   margin-bottom: auto;
 }
 
+/*Progress bar*/
+.itemProgressBar {
+  height: 2000em;
+  background: #0000;
+}
+
 /*Theme process progress ring*/
 .progressring-spiner {
   border-color: rgba(var(--accent));

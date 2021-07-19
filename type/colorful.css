@@ -65,6 +65,12 @@ body, h1, h2, h3, h4, .textActionButton, .emby-button-foreground  {
 .paperList, .visualCardBox {
     background-color: rgba(0, 0, 0, 0.5);
 }
+.navMenuOption-selected {
+    color: white;
+}
+progress {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
 
 /*Colors for loading spinner, placeholders, scroll bars*/
 .mdl-spinner__layer-1 {border-color: rgba(var(--accent), 1);}
