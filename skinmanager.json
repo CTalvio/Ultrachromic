@@ -1,0 +1,201 @@
+"name": "Ultrachromic",
+        "author": "CTalvio/EdgeMentality",
+        "description": "The final form, the true evolution of the chromic theme saga! Mix and match, accent and make the chromic theme of your dreams!",
+        "defaultCss": "/*Custom*/",
+        "categories": [{
+                "name": "Fonts",
+                "options": [{
+                        "type": "googleFonts",
+                        "name": "Change Font",
+                        "css": "html {font-family:  '$',sans-serif ;  } body,h1,h2,h3 { font-family: '$' ,sans-serif;}"
+                    },
+                    {
+                        "type": "number",
+                        "name": "Title Font Size",
+                        "description": "Change the size of the font used at titles.",
+                        "step": "0.1",
+                        "css": "h1 {font-size: $em;}",
+                        "default": "1.8"
+                    }
+                ]
+            },
+            {
+                "name": "Home/Dashboard Page",
+                "options": [{
+                    "type": "checkBox",
+                    "name": "Enlarge Tab Buttons",
+                    "description": "Enlarges the tab buttons, suggested, genres, etc. By default they are really tiny, especially on mobile.",
+                    "css": ".headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}.pageTitle {margin-top: auto; margin-bottom: auto;}.emby-tab-button {padding: 1.75em 1.7em;}"
+                }]
+            },
+            {
+                "name": "Miscellaneous",
+                "options": [{
+                        "type": "selector",
+                        "name": "Poster card hover effect",
+                        "description": "Changes the hover effect on Movie/TV show/Music poster card.",
+                        "css": "/*poster-eff*/",
+                        "selections": [{
+                                "name": "Scale in and out",
+                                "css": " /* Dynamic Poster effect-option1*/ .cardBox-bottompadded{margin-bottom; 1em !important;}.itemsContainer>.card>.cardBox {margin: 1em;background: rgba(0,0,0,0.5);transition: transform .2s;}.card:hover .cardBox{transform: scale(1.1);}"
+                            },
+                            {
+                                "name": "Pop up and down",
+                                "css": "/*Dynamic Poster effect-option2*/.itemsContainer>.card>.cardBox {margin: 1em;background: rgba(0,0,0,0.5);transition: transform .2s, box-shadow .2s;}.card:hover .cardBox{transform: translatey(-5px);box-shadow: 0px 5px 10px black;}"
+                            },
+                            {
+                                "name": "Poster Image in and out",
+                                "css": "/*Dynamic Poster effect-option3*/.card:hover .cardImageContainer{filter:background-size: 120%} .cardImageContainer{background-size: 105%;transition: all .2s;}"
+                            },
+                            {
+                                "name": "Poster Image blur",
+                                "css": "/*Dynamic Poster effect-option4*/.card:hover .cardImageContainer{filter: blur(2px);} .cardImageContainer{transition: all .2s;}"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "selector",
+                        "name": "Icon Pack",
+                        "description": "Changes all icons like dashboard and play. Choose non google fonts if you are blocking google fonts",
+                        "css": "/*Icons*/",
+                        "selections": [{
+                                "name": "Default",
+                                "css": ""
+                            },
+                            {
+                                "name": "Outlined",
+                                "css": "@import url('https://prayag17.github.io/Jellyfin-Icons/Outline.css');"
+                            },
+                            {
+                                "name": "Rounded",
+                                "css": "@import url('https://prayag17.github.io/Jellyfin-Icons/round.css');"
+                            },
+                            {
+                                "name": "Sharp",
+                                "css": "@import url('https://prayag17.github.io/Jellyfin-Icons/Sharp.css');"
+                            }, {
+                                "name": "Outlined-Non google fonts",
+                                "css": "@import url('https://prayag17.github.io/Jellyfin-Icons/Outline.css');"
+                            },
+                            {
+                                "name": "Rounded-Non google fonts",
+                                "css": "@import url('https://prayag17.github.io/Jellyfin-Icons/round.css');"
+                            },
+                            {
+                                "name": "Sharp-Non google fonts",
+                                "css": "@import url('https://prayag17.github.io/Jellyfin-Icons/Sharp.css');"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "checkBox",
+                        "name": "Image gradient in title page",
+                        "description": "removes the bg of detail ribbon and replace it with image gradient",
+                        "css": ".detailRibbon {background: transparent;}.itemBackdrop {-webkit-mask: linear-gradient(to bottom, black 50%,transparent);mask: linear-gradient(to bottom, black 50%,transparent);}"
+                    },
+                    {
+                        "type": "checkBox",
+                        "name": "Minimal Actor's card",
+                        "description": "display actor's cards in minimal and compact way",
+                        "css": "/*Actors*/.card[data-type=Actor] .cardBox {background: none;position: relative;}.card[data-type=Actor] .cardScalable {height: 0;overflow: hidden;padding-top: 100%;border-radius: var(--rounding);}.card[data-type=Actor] .cardText {position: absolute;background: transparent !important;}.card[data-type=Actor] .cardImageContainer::after {content: '';background: linear-gradient(360deg, rgba(0,0,0,0.75), transparent 70%);width: 100%;bottom: 0;position: absolute;padding-top: 100%;}.card[data-type=Actor].cardText-secondary {bottom: 0%;width: -webkit-fill-available;border-radius: 0px 0px 10px 10px;height: 22px;}.card[data-type=Actor] .cardText-first {bottom: 23.5px;width: -webkit-fill-available;height: 22px;}.layout-mobile .card[data-type=Actor] .cardText-first {color: white !important;}.card[data-type=Actor] .cardScalable {overflow: hidden;border-radius: var(--rounding);height: 3rem;}.card[data-type=Actor] .cardOverlayButton-br {position: absolute;bottom: 23% !important;right: 0 !important;}.card[data-type=Actor] .cardPadder {background: none;}.card[data-type=Actor] .cardImageIcon {bottom: 41%;position: absolute;left: 50%;transform: translateX(-50%);}"
+                    },
+                    {
+                        "type": "selector",
+                        "name": "Episode View",
+                        "description": "Theme episode list",
+                        "selections": [{
+                                "name": "Card",
+                                "css": " #itemDetailPage .vertical-list {display: grid;grid-template-columns: 30% 30% 30%;padding: 0 6px !important;height: fit-content;justify-content: space-evenly;-webkit-box-orient: horizontal;-webkit-box-direction: normal;margin: -6px;width: calc(100% - 6px);}.listItem-withContentWrapper:hover .listItemImageButton.itemAction.paper-icon-button-light {opacity: 100%;}@media (max-width: 901px){#itemDetailPage .vertical-list {grid-template-columns: 30% 30%;}}.listItem-withContentWrapper {transition: none;height: fit-content;max-width: 100%;margin: 6px;border-radius: var(--rounding);overflow: hidden;padding: 0;overflow: hidden;}.listItem-withContentWrapper:hover{background: transparent;}.listItem-content {height: 100%;}.listItem-content {display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;width: 100%;display: grid;grid-template-columns: 100%;}.listItemImage.listItemImage-large.itemAction.lazy {height: 14rem;width: 100%;padding: 0 !important;margin: 0 !important;top: 0;left: 0;}.layout-mobile #itemDetailPage .vertical-list {grid-template-columns: 100%;}.secondary.listItem-overview.listItemBodyText {height: fit-content;}.layout-mobile .listItem-bottomoverview {padding: 0 10px;}.listItemBody.itemAction {padding: 0 5px;}.listItemImageButton.itemAction.paper-icon-button-light {opacity: 0;color: var(--accent);transition: all .2s;}.layout-mobile .listItemImageButton.itemAction.paper-icon-button-light{opacity: 100% !important;}"
+                            },
+                            {
+                                "name": "Compact List",
+                                "css": ".listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}.listItem-content {height: 115px;}.secondary.listItem-overview.listItemBodyText {height: 61px;margin: 0;}"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "checkBox",
+                        "name": "Blur episode thumbnail",
+                        "description": "Blur episode thumbnail to prevent spoiler. Note: Doesn't in browser's that dont support backdrop-filter, i.e firefox(can be enabled though), opera and more(unknown).",
+                        "css": " .nextUpSection.verticalSection.detailVerticalSection>div>div>div>div.cardScalable>button {filter: blur(10px);}div.listItem>div>div>button:nth-child(1) {transition: none !important;border-radius: 0px;height: 100%;width: 100%;backdrop-filter: blur(10px);}div.listItem>div>div>button:nth-child(1):hover {transition: none !important;border-radius: 0px;height: 100%;width: 100%;backdrop-filter: blur(10px);}#childrenContent>div>div>div>div.listItemImage.listItemImage large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast>button {transition: none !important;border-radius: 0px;height: 100%;width: 100%;backdrop-filter: blur(10px);}#childrenContent>div>div>div>div.listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast>button:hover {border-radius: 0px;height: 85%;width: 85%;backdrop-filter: blur(20px);}@supports not ( (backdrop-filter: blur(10px)) or (--webkit-backdrop-filter: blur(10px))) {#childrenContent>div>div>div>div.listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {filter: blur(10px);}}@supports not ( (backdrop-filter: blur(10px)) or (--webkit-backdrop-filter: blur(10px))) {#itemDetailPage>div.detailPageWrapperContainer>div.detailPageSecondaryContainer>div.detailPageContent>div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container>div.padded-top-focusscale.padded-bottom-focusscale.emby-scroller>.itemsContainer>.card.overflowBackdropCard.card-hoverable.card-withuserdata>div>.cardScalable {background: rgba(0, 0, 0, .5);filter: blur(10px);transition: none !important;filter: blur(10px);}}#itemDetailPage>div.detailPageWrapperContainer>div.detailPageSecondaryContainer>div.detailPageContent>div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container>div.padded-top-focusscale.padded-bottom-focusscale.emby-scroller>.itemsContainer>.card.overflowBackdropCard.card-hoverable.card-withuserdata>div>.cardScalable>button {border-radius: 0px;height: 0%;width: 0%;background: rgba(0, 0, 0, .5);filter: blur(10px);transition: none !important;backdrop-filter: blur(10px);}.cardScalable{overflow: hidden;}"
+                    },
+                    {
+                        "type": "checkBox",
+                        "name": "Blur Dialog Background",
+                        "description": "Blur Menu and dialog background. Note: Works in Chrome and Edge only, functionalty can be enable, click on help button for info.",
+                        "css": ".mainDrawer {background: transparent;backdrop-filter: blur(20px);}"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "mode": "hex",
+                        "name": "Title Page Button text color",
+                        "description": "change button's text color.",
+                        "css": ".raised{color: $;}",
+                        "default": "#ffffff"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "mode": "hex",
+                        "name": "Title Page Button background color",
+                        "description": "change background color of button.",
+                        "css": ".raised{background-color: $;}",
+                        "default": "#303030"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "mode": "hex",
+                        "name": "Idle button color-foreground",
+                        "description": "This modifies the color of buttons like cast and search.",
+                        "css": ".paper-icon-button-light{color: $; transititon: all .2s;}",
+                        "default": "#ffffff"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "mode": "hex",
+                        "name": "Idle button color-background",
+                        "description": "This modifies the background color of buttons like cast and search.",
+                        "css": ".paper-icon-button-light{background-color: $ !important; transition: all .2s;}",
+                        "default": "#00000000"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "mode": "hex",
+                        "name": "Hover button color-foreground",
+                        "description": "This modifies the color of buttons like cast and search when your cursor is on it.",
+                        "css": ".paper-icon-button-light:hover{color: $ !important;}",
+                        "default": "#00a4dc"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "mode": "hex",
+                        "name": "Hover button color-background",
+                        "description": "This modifies the background color of buttons like cast and search when your cursor is on it.",
+                        "css": ".paper-icon-button-light:hover{background-color: $ !important;}",
+                        "default": "#00a4db33"
+                    },
+                    {
+                        "type": "number",
+                        "name": "Border Radius",
+                        "description": "Change the rounding",
+                        "css": ":root{--btn-rounding: $px; --rounding: $px;} .missingIndicator, .unairedIndicator {border-radius: var(--rounding);}.formDialogHeader {border-top-left-radius: var(--rounding);border-top-right-radius: var(--rounding);}.formDialogFooter {border-bottom-left-radius: var(--rounding);border-bottom-right-radius: var(--rounding);}.cardOverlayContainer {border-radius: var(--rounding) !important;}.primaryImageWrapper>img, .toast, .paperList, .cardContent, .sessionNowPlayingInnerContent, .listItem:hover, .cardImage, .fab, .raised, .multiSelectCheckboxOutline, .itemSelectionPanel, .cardContent-button, .cardContent-shadow, .itemDetailImage, .cardOverlayButton-hover, .cardImageContainer, .cardPadder, .listItemImage, .listItemImageButton, .listItemButton, .headerButton, .paper-icon-button-light, .innerCardFooter, .blurhash-canvas, .dialog, .countIndicator, .playedIndicator, .listItemIcon, .listItem-border, .button-flat, .visualCardBox, .checkboxOutline, .emby-select-withcolor, .chapterThumbTextContainer, .chapterThumbContainer, .chapterThumb, .emby-input, .emby-textarea, .emby-select-withcolor, .nowPlayingPageImage, .upNextDialog-poster-img, .upNextContainer, .cardOverlayButtonIcon {border-radius: var(--rounding) !important;}.osdPoster img {border-radius: var(--rounding);border: none;}.mdl-slider::-moz-range-thumb {border-radius: var(--rounding);}.mdl-slider::-ms-thumb {border-radius: var(--rounding);}.mdl-slider::-webkit-slider-thumb {border-radius: var(--rounding);}div[data-role='controlgroup'] a[data-role='button']:first-child {border-bottom-left-radius: var(--rounding);border-top-left-radius: var(--rounding);}div[data-role='controlgroup'] a[data-role='button']:last-child {border-bottom-right-radius: var(--rounding);border-top-right-radius: var(--rounding);}#dashboardPage .cardContent, #dashboardPage .sessionNowPlayingInnerContent {border-radius: var(--rounding) var(--rounding) 0 0 !important;}#divVirtualFolders .cardImageContainer, #divVirtualFolders .cardContent {border-radius: var(--rounding) var(--rounding) 0 0 !important;}#userProfilesPage .cardImage, #userProfilesPage .cardContent {border-radius: var(--rounding) var(--rounding) 0 0 !important;}#user_usage_report_table, .detailTable {border-radius: var(--rounding);}progress {border-radius: var(--rounding);}progress::-webkit-progress-bar {border-radius: var(--rounding);}progress::-moz-progress-bar {border-radius: var(--rounding);}progress::-webkit-progress-value {border-radius: var(--rounding);}.taskProgressOuter, .taskProgressInner {border-radius: var(--rounding) !important;}::-webkit-scrollbar-thumb {border-radius: var(--rounding);} .paper-icon-button-light{border-radius: var(--btn-rounding) !impotant;}",
+                        "default": "0"
+                    },
+                    {
+                        "type": "colorPicker",
+                        "name": "Background-color",
+                        "description": "change background-color of the background",
+                        "css": ".backgroundContainer.withBackdrop {background-color: $;}",
+                        "default": "rgba(0, 0, 0, 0.86)"
+                    },
+                    {
+                        "type": "blurSlider",
+                        "name": "Backdrop Blur",
+                        "description": "adds blur to the backdrop images default is zero",
+                        "css": ":root{--bgblur: blur($px)}.backdropImage {filter: var(--bgblur);}",
+                        "default": "0"
+                    }
+                ]
+            }
+        ]
+    }
+]

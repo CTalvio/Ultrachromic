@@ -1,9 +1,0 @@
-@import url('https://ctalvio.github.io/Ultrachromic/accentlist.css');
-/*Values used by monochromic when not accented*/
-
-.transcodingProgress > div, .itemProgressBarForeground {
-    background-color: rgba(255,255,255,0.3);
-}
-.playbackProgress > div {
-    background-color: rgba(255,255,255,0.75);
-}

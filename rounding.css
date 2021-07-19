@@ -78,6 +78,9 @@ progress::-webkit-progress-value {
 .actionSheetMenuItem:hover {
     border-radius: 0 !important;
 }
+fieldset {
+    border-radius: var(--rounding);
+}
 .osdPoster img {
   border-radius: var(--rounding); border: none;
 }

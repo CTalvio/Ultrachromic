@@ -110,6 +110,9 @@
 }
 
 /*Improve some menu alignments*/
+.emby-tab-button {
+    padding: 1.75em 1.7em;
+}
 .formDialogHeaderTitle {
   margin-left: 1em;
 }

@@ -318,6 +318,8 @@ h4,
 .backgroundContainer {
     background-color: #cecece !important;
 }
+.dialog, .innerCardFooter {
+    background-color: #cecece;
 
 .formDialogHeader, .formDialogFooter {
     background-color: #eaeaea !important;

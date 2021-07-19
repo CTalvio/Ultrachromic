@@ -119,6 +119,18 @@
 .visualCardBox, .cardImageContainer {
     box-shadow: none;
 }
+.backgroundProgress > div {
+    background-color: #0000;
+}
+#divRunningTasks span {
+    color: rgba(255,255,255,0.75) !important;
+}
+.itemsContainer > .card > .cardBox {
+    margin-left: 0.6em !important;
+}
+.itemsContainer > .card > .cardBox {
+    margin-right: 0.8em;
+}
 
 /*ANIMATIONS*/
 /*Fade as images load*/
