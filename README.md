@@ -190,7 +190,7 @@ OR
 
 ![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
 
-Dark, light, and colorful type. You must use one of these.
+Dark, light, and colorful type. You must use one of these. If you wish to use an accent color with the dark style, use the "_withaccent" line.
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/type/dark.css');
@@ -202,6 +202,10 @@ OR
 OR
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
+```
+OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css');
 ```
 
 <br />
@@ -289,7 +293,7 @@ There are some manual options you can define if you want, after the import lines
 <br />
 <br />
 
-### X. Extras
+### Extras
 
 [Check out these custom icons by @prayag17!](https://github.com/prayag17/Jellyfin-Icons)
 
@@ -299,7 +303,7 @@ Also a general thanks to prayag17, I've joinked some code from him for this proj
 <br />
 <br />
 
-### X. Fix for use with some reverse proxy setups
+### Fix for use with some reverse proxy setups
 
 ## Using with reverse proxy
 
