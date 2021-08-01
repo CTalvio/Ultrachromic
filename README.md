@@ -1,7 +1,23 @@
 # Ultrachromic
-The final form, the true evolution of the chromic theme saga!
 
-# CURRENTLY BEING TESTED, FEEL FREE TO TRY IT OUT AND REPORT ISSUES
+The final form, the true evolution of the chromic theme saga! The old trilogy of chromic themes are deprecated, as their appearances can be replicated using Ultrachomic.
+
+This is a custom theme for Jellyfin mediaserver created using CSS overrides. Note that I maintain this theme to be compatible with whatever version of Jellyfin I am currently using. Which is usually the latest stable release. You can therefore assume that using the theme on older versions may not work, but also that if a new release breaks something, that I will fix it. If you encounter unthemed elements or something broken, open an issue.
+
+![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
+
+To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
+
+## Features
+- Themes **EVERYTHING**
+- Three types of styles to choose from
+- Extensive additional options
+- Customizable accent color
+- Decide yourself, exactly how you want your backdrops blurred
+- Squared or rounded UI style, you decide
+- Two options for progress bars
+- Works well on mobile, more compact and aligned UI
+- Various small tweaks and fixes to the stock UI
 
 
 ### Single line presets
@@ -26,9 +42,7 @@ Only one line is needed, nova and kaleido support custom accents.
 
 ## Customization using multiple import lines
 
-To use the theme copy paste the lines below to "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. **NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
-
-Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add the one after the other, in the order they are listed here. Simply omit the options you do not want to use.
+Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add one import after another, in the order they are listed here. Simply omit the options you do not want to use.
 
 <br />
 <br />
@@ -172,6 +186,8 @@ OR
 
 ### 10. Choose type
 
+![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
+
 Dark, light, and colorful type. You must use one of these.
 
 ```css
@@ -214,9 +230,26 @@ OR
 <br />
 <br />
 
-### 12. Effects
+### 12. Progress bar
 
-![image](https://user-images.githubusercontent.com/4365015/127769354-f7a0c402-0c9a-4a8e-a347-e6c352ecabbf.png)
+
+
+Default or an overlay style progress indicator for library items.
+
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/overlayprogress.css');
+```
+OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/bottombarprogress.css');
+```
+
+<br />
+<br />
+
+### 13. Effects
+
+
 
 Additional eye candy. Make items glow on hover, make some UI elements glassy see-through, and/or fade items in and out on scroll.
 
@@ -231,3 +264,30 @@ AND/OR
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css');
 ```
+
+<br />
+<br />
+
+### 14. Manual options
+
+There are some manual options you can define if you want, after the import lines add this short snippet of code, you can edit it to set anything you want as a login background, or modify how blurry or dark/light your backdrops are, as well as to set a custom accent color.
+
+```css
+/*Style backdrop*/
+.backdropImage {filter: blur(18px) saturate(120%) contrast(120%) brightness(40%);}
+
+/*Login background*/
+#loginPage {background: url(https://i.imgur.com/9vL4iNf.png) !important;}
+
+/*Accent and roundingd*/
+:root {--accent: 98, 121, 205;}
+:root {--rounding: 12px;}
+```
+
+<br />
+<br />
+
+### X. Extras
+
+Chaeck out these custom icons by @prayag17: github.com/prayag17/Jellyfin-Icons
+Also thanks to prayag17, I've joinked some code from him for this project. (grid episodes)
