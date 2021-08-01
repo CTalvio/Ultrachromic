@@ -15,8 +15,8 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 - Three types of styles to choose from
 - Extensive additional options
 - Customizable accent color
-- Decide yourself, exactly how you want your backdrops blurred
-- Squared or rounded UI style, you decide
+- Choose how blurry you want your backdrops
+- Squared or rounded UI
 - Two options for progress bars
 - Works well on mobile, more compact and aligned UI
 - Various small tweaks and fixes to the stock UI
@@ -256,9 +256,9 @@ OR
 
 ### 13. Effects
 
-![image](https://user-images.githubusercontent.com/4365015/127779139-3064b7b7-8a88-43ce-8b87-aeea5a152f37.png)
+![image](https://user-images.githubusercontent.com/4365015/127781073-c2a2a1f1-4c60-4c57-afa9-13a4775489bb.png)
 
-Additional eye candy. Make items glow on hover, make some UI elements glassy see-through, and/or fade items in and out on scroll.
+Additional eye candy. Make items glow on hover, make some UI elements glassy see-through.
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css');
@@ -266,10 +266,6 @@ Additional eye candy. Make items glow on hover, make some UI elements glassy see
 AND/OR
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/effects/glassy.css');
-```
-AND/OR
-```css
-@import url('https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css');
 ```
 
 <br />
