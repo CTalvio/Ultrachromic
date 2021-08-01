@@ -129,7 +129,7 @@ Transaparent top bar, use one of these. The "-dashboard" option, also makes the 
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/header/header_transparent.css');
+broken ATM, use the -dashboard option for now
 ```
 
 <br />
