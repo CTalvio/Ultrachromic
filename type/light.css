@@ -11,6 +11,14 @@
   background: rgba(0,0,0,.2) !important;
 }
 
+/*Flip indicator colors*/
+.countIndicator {
+  background: rgba(var(--accent),0.8);
+}
+.playedIndicator {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 /*Various themeing*/
 #itemDetailPage .emby-select-withcolor {
   background-color: rgba(255, 255, 255, 0.2);
@@ -324,7 +332,7 @@ h4,
 }
 
 .backgroundContainer {
-    background-color: #cecece !important;
+    background-color: transparent !important;
 }
 .dialog, .innerCardFooter {
     background-color: #cecece;
