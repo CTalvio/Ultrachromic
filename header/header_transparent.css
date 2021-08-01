@@ -1,5 +1,13 @@
-/*Banner transparency*/
-.skinHeader {
+#liveTvStatusPage .skinHeader,
+#itemDetailPage .skinHeader,
+#userImagePage .skinHeader,
+#displayPreferencesPage .skinHeader,
+#homeScreenPreferencesPage .skinHeader,
+#languagePreferencesPage .skinHeader,
+#indexPage .skinHeader,
+#moviesPage .skinHeader,
+#tvRecommendedPage .skinHeader,
+#musicRecommendedPage .skinHeader {
   background: none !important; 
   background-color: rgba(0, 0, 0, 0) !important;
 }

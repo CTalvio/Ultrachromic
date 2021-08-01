@@ -335,10 +335,13 @@ h4,
     background-color: transparent !important;
 }
 .dialog, .innerCardFooter {
-    background-color: #cecece;
+    background-color: #cecece80;
 }
 .formDialogHeader, .formDialogFooter {
     background-color: #eaeaea !important;
+}
+.formDialogFooter-clear {
+    background-color: transparent !important;
 }
 
 .cardOverlayContainer {

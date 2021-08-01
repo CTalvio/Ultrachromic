@@ -2,10 +2,16 @@
 
 .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media all and (max-width: 1001px) {
+@media all and (max-width: 2000px) {
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 1000px) {
   .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
     grid-template-columns: 1fr 1fr;
   }

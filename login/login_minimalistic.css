@@ -16,3 +16,7 @@
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {
   display: none
 }
+#loginPage {
+  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
+  background-size: cover !important;
+}
