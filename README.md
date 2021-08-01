@@ -10,18 +10,28 @@ These let you use Ultrachromic using a couple presets. These follow the same loo
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/presets/monochromic_preset.css');
+```
+OR
+```css
 @import url('https://ctalvio.github.io/Ultrachromic/presets/kaleidochromic_preset.css');
+```
+OR
+```css
 @import url('https://ctalvio.github.io/Ultrachromic/presets/novachromic_preset.css');
 ```
 Only one line is needed, nova and kaleido support custom accents.
 
-
+<br />
+<br />
 
 ## Customization using multiple import lines
 
 To use the theme copy paste the lines below to "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. **NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
 
 Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add the one after the other, in the order they are listed here. Simply omit the options you do not want to use.
+
+<br />
+<br />
 
 ### 1. Recommended
 
@@ -32,6 +42,9 @@ fixes.css contains various small tweaks all over the JF UI, an alignment here, a
 @import url('https://ctalvio.github.io/Ultrachromic/jf_font.css');
 ```
 
+<br />
+<br />
+
 ### 2. Required
 
 These lines are required.
@@ -40,6 +53,9 @@ These lines are required.
 @import url('https://ctalvio.github.io/Ultrachromic/base.css');
 @import url('https://ctalvio.github.io/Ultrachromic/accentlist.css');
 ```
+
+<br />
+<br />
 
 ### 3. Rounding
 
@@ -53,6 +69,9 @@ OR
 @import url('https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css');
 ```
 
+<br />
+<br />
+
 ### 4. Smaller cast list
 
 ![image](https://user-images.githubusercontent.com/4365015/127768495-3f211a57-3147-4b11-a9e0-5c9bdebc32b0.png)
@@ -62,6 +81,9 @@ A smaller, square aspect ratio style cast list.
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/smallercast.css');
 ```
+
+<br />
+<br />
 
 ### 5. Compact episode list
 
@@ -77,6 +99,9 @@ OR
 @import url('https://ctalvio.github.io/Ultrachromic/episodelist/episodes_grid.css');
 ```
 
+<br />
+<br />
+
 ### 6. Transparent top bar
 
 ![image](https://user-images.githubusercontent.com/4365015/127768778-056a68eb-402f-49d0-8277-c11a71edbbe5.png)
@@ -91,6 +116,8 @@ OR
 @import url('https://ctalvio.github.io/Ultrachromic/header/header_transparent.css');
 ```
 
+<br />
+<br />
 
 ### 7. Login screen
 
@@ -106,6 +133,9 @@ OR
 @import url('https://ctalvio.github.io/Ultrachromic/login/login_frame.css');
 ```
 
+<br />
+<br />
+
 ### 8. Input fields
 
 ![image](https://user-images.githubusercontent.com/4365015/127769216-1d04cd30-14e0-4fda-9b2c-e0bfdb3514f6.png)
@@ -114,10 +144,14 @@ Input field styles, with borders that highlight when selected, or with no border
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/fields/fields_border.css');
+```
 OR
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/fields/fields_noborder.css');
 ```
+
+<br />
+<br />
 
 ### 9. Watched/Unwatched indicators
 
@@ -133,11 +167,33 @@ OR
 @import url('https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_corner.css');
 ```
 
-### 10. Watched/Unwatched indicators
+<br />
+<br />
 
-![image](https://user-images.githubusercontent.com/4365015/127769354-f7a0c402-0c9a-4a8e-a347-e6c352ecabbf.png)
+### 10. Choose type
 
-Two options, should the indicator be floating, or attached to the corner of the title card.
+Dark, light, and colorful type. You must use one of these.
+
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/type/dark.css');
+```
+OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/type/light.css');
+```
+OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
+```
+
+<br />
+<br />
+
+### 11. Title page
+
+
+
+Four options, two versions, each version can be used with or without a logo replacing title text.
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_simple.css');
@@ -155,34 +211,23 @@ OR
 @import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_banner-logo.css');
 ```
 
+<br />
+<br />
 
-### 11. Choose type
-
-Dark, light, and colorful type. You must use one of these.
-
-```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/dark.css');
-```
-OR
-```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/light.css');
-```
-OR
-```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
-```
-
-### 11. Effects
+### 12. Effects
 
 ![image](https://user-images.githubusercontent.com/4365015/127769354-f7a0c402-0c9a-4a8e-a347-e6c352ecabbf.png)
 
-Additional eye candy.
+Additional eye candy. Make items glow on hover, make some UI elements glassy see-through, and/or fade items in and out on scroll.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_banner.css');
+@import url('https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css');
 ```
 AND/OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_banner-logo.css');
+@import url('https://ctalvio.github.io/Ultrachromic/effects/glassy.css');
 ```
-
+AND/OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css');
+```
