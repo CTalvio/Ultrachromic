@@ -22,7 +22,7 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 - Various small tweaks and fixes to the stock UI
 
 
-### Single line presets
+## Single line presets
 
 These let you use Ultrachromic using a couple presets. These follow the same look as the old chromic themes.
 
