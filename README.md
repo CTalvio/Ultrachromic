@@ -8,6 +8,8 @@ This is a custom theme for Jellyfin mediaserver created using CSS overrides. Not
 
 To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
 
+**NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
+
 ## Features
 - Themes **EVERYTHING**
 - Three types of styles to choose from
@@ -289,5 +291,31 @@ There are some manual options you can define if you want, after the import lines
 
 ### X. Extras
 
-Chaeck out these custom icons by @prayag17: github.com/prayag17/Jellyfin-Icons
-Also thanks to prayag17, I've joinked some code from him for this project. (grid episodes)
+[Check out these custom icons by @prayag17!](https://github.com/prayag17/Jellyfin-Icons)
+
+Also a general thanks to prayag17, I've joinked some code from him for this project. (grid episodes)
+
+
+<br />
+<br />
+
+### X. Fix for use with some reverse proxy setups
+
+## Using with reverse proxy
+
+When using the Nginx Reverse proxy config from the [Jellyfin docs](https://jellyfin.org/docs/general/networking/nginx.html) the theme will not work by default. (If you are using the subpath config, you can ignore all this.)
+
+Because the config includes Content-Security-Policy which reduces risk of XSS, you need to add the URL from this repo and the fonts to the list of allowed external sources.
+
+In the nginx config you should change the
+
+```
+add_header Content-Security-Policy ....
+```
+to:
+
+```
+add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline' https://ctalvio.github.io/Ultrachromic/accentlist.css https://ctalvio.github.io/Ultrachromic/base.css https://ctalvio.github.io/Ultrachromic/bottombarprogress.css https://ctalvio.github.io/Ultrachromic/fixes.css https://ctalvio.github.io/Ultrachromic/jf_font.css https://ctalvio.github.io/Ultrachromic/overlayprogress.css https://ctalvio.github.io/Ultrachromic/rounding.css https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css https://ctalvio.github.io/Ultrachromic/smallercast.css https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_floating.css https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_corner.css https://ctalvio.github.io/Ultrachromic/effects/glassy.css https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css https://ctalvio.github.io/Ultrachromic/episodelist/episodes_compactlist.css https://ctalvio.github.io/Ultrachromic/episodelist/episodes_grid.css https://ctalvio.github.io/Ultrachromic/fields/fields_border.css https://ctalvio.github.io/Ultrachromic/fields/fields_noborder.css https://ctalvio.github.io/Ultrachromic/header/header_transparent.css https://ctalvio.github.io/Ultrachromic/header/header_transparent-dashboard.css https://ctalvio.github.io/Ultrachromic/login/login_frame.css https://ctalvio.github.io/Ultrachromic/login/login_minimalistic.css https://ctalvio.github.io/Ultrachromic/login/login_frame.css https://ctalvio.github.io/Ultrachromic/presets/monochromic_preset.css https://ctalvio.github.io/Ultrachromic/presets/kaleidochromic_preset.css https://ctalvio.github.io/Ultrachromic/presets/novachromic_preset.css https://ctalvio.github.io/Ultrachromic/titlepage/title_banner.css https://ctalvio.github.io/Ultrachromic/titlepage/title_banner_logo.css https://ctalvio.github.io/Ultrachromic/titlepage/title_simple.css https://ctalvio.github.io/Ultrachromic/titlepage/title_simple-logo.css https://ctalvio.github.io/Ultrachromic/type/light.css https://ctalvio.github.io/Ultrachromic/type/dark.css https://ctalvio.github.io/Ultrachromic/type/colorful.css https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css https://fonts.googleapis.com/css2; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
+```
+
+If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from an external source.
