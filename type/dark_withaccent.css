@@ -1,6 +1,10 @@
 /*This file contains color and style changes for the dark theme type*/
 :root {--selection: 120, 120, 120;}
 
+.backgroundContainer.withBackdrop {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 /*Some themeing for the dashboard*/
 
 #user_usage_report_table,

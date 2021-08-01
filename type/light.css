@@ -3,6 +3,14 @@
 :root {--indicator: var(--accent);}
 :root {--selection: var(--accent);}
 
+/*Colors for title_2*/
+.layout-desktop .detailRibbon {
+  background: rgba(255,255,255,.2) !important;
+}
+.itemBackdrop::after {
+  background: rgba(0,0,0,.2) !important;
+}
+
 /*Various themeing*/
 #itemDetailPage .emby-select-withcolor {
   background-color: rgba(255, 255, 255, 0.2);

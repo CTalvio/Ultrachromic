@@ -10,6 +10,20 @@
     background-color: rgba(8, 8, 8, 0.85);
 }
 
+/*Login background*/
+#loginPage {
+  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
+  background-size: cover !important;
+}
+
+/*Colors for title_2*/
+.layout-desktop .detailRibbon {
+    background: rgba(0, 0, 0, 0.2);
+}
+.itemBackdrop::after {
+  background: rgba(0,0,0,.26) !important;
+}
+
 /*Accenting*/
 .drawer-open {
     box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;

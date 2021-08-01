@@ -5,24 +5,12 @@
 }
 
 /*Achieves similar effect without use of mask-image, foregoing the cool fade effect*/
-#dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#devicesPage,
-#serverActivityPage,
 #liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
 #itemDetailPage,
 #userImagePage,
 #displayPreferencesPage,
 #homeScreenPreferencesPage,
-#languagePreferencesPage,
-#quickConnectPreferencesPage {
+#languagePreferencesPage {
   margin-top: 60px;
   padding-top: 0px !important;
   overflow: scroll;
@@ -38,9 +26,7 @@
     overflow: scroll;
   }
   #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage {
+  #mediaLibraryPage {
     margin-top: 60px;
     padding-top: 0px !important;
     overflow: scroll;
@@ -51,13 +37,9 @@
   #indexPage,
   #moviesPage,
   #tvRecommendedPage,
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage,
   #musicRecommendedPage {
     margin-top: 130px;
-    padding-top: 0px !important;
+    padding-top: 0.5em !important;
     overflow: scroll;
   }
 }
