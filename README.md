@@ -213,6 +213,7 @@ OR
 
 ### 11. Title page
 
+![image](https://user-images.githubusercontent.com/4365015/127778994-ddee8235-6bb2-42ae-a8b1-f9023dc69398.png)
 
 
 Four options, two versions, each version can be used with or without a logo replacing title text.
@@ -238,7 +239,7 @@ OR
 
 ### 12. Progress bar
 
-
+![image](https://user-images.githubusercontent.com/4365015/127778728-c1f4bdb9-c4df-4659-a75e-c95089935412.png)
 
 Default or an overlay style progress indicator for library items.
 
@@ -255,7 +256,7 @@ OR
 
 ### 13. Effects
 
-
+![image](https://user-images.githubusercontent.com/4365015/127779139-3064b7b7-8a88-43ce-8b87-aeea5a152f37.png)
 
 Additional eye candy. Make items glow on hover, make some UI elements glassy see-through, and/or fade items in and out on scroll.
 
