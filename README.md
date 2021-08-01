@@ -15,8 +15,8 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 - Three types of styles to choose from
 - Extensive additional options
 - Customizable accent color
-- Decide yourself, exactly how you want your backdrops blurred
-- Squared or rounded UI style, you decide
+- Choose how blurry you want your backdrops
+- Squared or rounded UI
 - Two options for progress bars
 - Works well on mobile, more compact and aligned UI
 - Various small tweaks and fixes to the stock UI
