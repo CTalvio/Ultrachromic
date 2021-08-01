@@ -298,7 +298,7 @@ There are some manual options you can define if you want, after the import lines
 
 [Check out these custom icons by @prayag17!](https://github.com/prayag17/Jellyfin-Icons)
 
-Also a general thanks to prayag17, I've joinked some code from him for this project. (grid episodes)
+Also a general thanks to prayag17, I've joinked some code from him for this project. (grid episodes, title logo)
 
 
 <br />
