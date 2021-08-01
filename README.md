@@ -1,10 +1,28 @@
 # Ultrachromic
-The final form, the true evolution of the chromic theme saga!
 
-# CURRENTLY BEING TESTED, FEEL FREE TO TRY IT OUT AND REPORT ISSUES
+The final form, the true evolution of the chromic theme saga! The old trilogy of chromic themes are deprecated, as their appearances can be replicated using Ultrachomic.
+
+This is a custom theme for Jellyfin mediaserver created using CSS overrides. Note that I maintain this theme to be compatible with whatever version of Jellyfin I am currently using. Which is usually the latest stable release. You can therefore assume that using the theme on older versions may not work, but also that if a new release breaks something, that I will fix it. If you encounter unthemed elements or something broken, open an issue.
+
+![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
+
+To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
+
+**NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
+
+## Features
+- Themes **EVERYTHING**
+- Three types of styles to choose from
+- Extensive additional options
+- Customizable accent color
+- Decide yourself, exactly how you want your backdrops blurred
+- Squared or rounded UI style, you decide
+- Two options for progress bars
+- Works well on mobile, more compact and aligned UI
+- Various small tweaks and fixes to the stock UI
 
 
-### Single line presets
+## Single line presets
 
 These let you use Ultrachromic using a couple presets. These follow the same look as the old chromic themes.
 
@@ -26,9 +44,7 @@ Only one line is needed, nova and kaleido support custom accents.
 
 ## Customization using multiple import lines
 
-To use the theme copy paste the lines below to "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. **NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
-
-Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add the one after the other, in the order they are listed here. Simply omit the options you do not want to use.
+Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add one import after another, in the order they are listed here. Simply omit the options you do not want to use.
 
 <br />
 <br />
@@ -172,7 +188,9 @@ OR
 
 ### 10. Choose type
 
-Dark, light, and colorful type. You must use one of these.
+![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
+
+Dark, light, and colorful type. You must use one of these. If you wish to use an accent color with the dark style, use the "_withaccent" line.
 
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/type/dark.css');
@@ -185,12 +203,17 @@ OR
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
 ```
+OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css');
+```
 
 <br />
 <br />
 
 ### 11. Title page
 
+![image](https://user-images.githubusercontent.com/4365015/127778994-ddee8235-6bb2-42ae-a8b1-f9023dc69398.png)
 
 
 Four options, two versions, each version can be used with or without a logo replacing title text.
@@ -214,9 +237,26 @@ OR
 <br />
 <br />
 
-### 12. Effects
+### 12. Progress bar
 
-![image](https://user-images.githubusercontent.com/4365015/127769354-f7a0c402-0c9a-4a8e-a347-e6c352ecabbf.png)
+![image](https://user-images.githubusercontent.com/4365015/127778728-c1f4bdb9-c4df-4659-a75e-c95089935412.png)
+
+Default or an overlay style progress indicator for library items.
+
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/overlayprogress.css');
+```
+OR
+```css
+@import url('https://ctalvio.github.io/Ultrachromic/bottombarprogress.css');
+```
+
+<br />
+<br />
+
+### 13. Effects
+
+![image](https://user-images.githubusercontent.com/4365015/127779139-3064b7b7-8a88-43ce-8b87-aeea5a152f37.png)
 
 Additional eye candy. Make items glow on hover, make some UI elements glassy see-through, and/or fade items in and out on scroll.
 
@@ -231,3 +271,56 @@ AND/OR
 ```css
 @import url('https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css');
 ```
+
+<br />
+<br />
+
+### 14. Manual options
+
+There are some manual options you can define if you want, after the import lines add this short snippet of code, you can edit it to set anything you want as a login background, or modify how blurry or dark/light your backdrops are, as well as to set a custom accent color.
+
+```css
+/*Style backdrop*/
+.backdropImage {filter: blur(18px) saturate(120%) contrast(120%) brightness(40%);}
+
+/*Login background*/
+#loginPage {background: url(https://i.imgur.com/9vL4iNf.png) !important;}
+
+/*Accent and roundingd*/
+:root {--accent: 98, 121, 205;}
+:root {--rounding: 12px;}
+```
+
+<br />
+<br />
+
+### Extras
+
+[Check out these custom icons by @prayag17!](https://github.com/prayag17/Jellyfin-Icons)
+
+Also a general thanks to prayag17, I've joinked some code from him for this project. (grid episodes)
+
+
+<br />
+<br />
+
+### Fix for use with some reverse proxy setups
+
+## Using with reverse proxy
+
+When using the Nginx Reverse proxy config from the [Jellyfin docs](https://jellyfin.org/docs/general/networking/nginx.html) the theme will not work by default. (If you are using the subpath config, you can ignore all this.)
+
+Because the config includes Content-Security-Policy which reduces risk of XSS, you need to add the URL from this repo and the fonts to the list of allowed external sources.
+
+In the nginx config you should change the
+
+```
+add_header Content-Security-Policy ....
+```
+to:
+
+```
+add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline' https://ctalvio.github.io/Ultrachromic/accentlist.css https://ctalvio.github.io/Ultrachromic/base.css https://ctalvio.github.io/Ultrachromic/bottombarprogress.css https://ctalvio.github.io/Ultrachromic/fixes.css https://ctalvio.github.io/Ultrachromic/jf_font.css https://ctalvio.github.io/Ultrachromic/overlayprogress.css https://ctalvio.github.io/Ultrachromic/rounding.css https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css https://ctalvio.github.io/Ultrachromic/smallercast.css https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_floating.css https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_corner.css https://ctalvio.github.io/Ultrachromic/effects/glassy.css https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css https://ctalvio.github.io/Ultrachromic/episodelist/episodes_compactlist.css https://ctalvio.github.io/Ultrachromic/episodelist/episodes_grid.css https://ctalvio.github.io/Ultrachromic/fields/fields_border.css https://ctalvio.github.io/Ultrachromic/fields/fields_noborder.css https://ctalvio.github.io/Ultrachromic/header/header_transparent.css https://ctalvio.github.io/Ultrachromic/header/header_transparent-dashboard.css https://ctalvio.github.io/Ultrachromic/login/login_frame.css https://ctalvio.github.io/Ultrachromic/login/login_minimalistic.css https://ctalvio.github.io/Ultrachromic/login/login_frame.css https://ctalvio.github.io/Ultrachromic/presets/monochromic_preset.css https://ctalvio.github.io/Ultrachromic/presets/kaleidochromic_preset.css https://ctalvio.github.io/Ultrachromic/presets/novachromic_preset.css https://ctalvio.github.io/Ultrachromic/titlepage/title_banner.css https://ctalvio.github.io/Ultrachromic/titlepage/title_banner_logo.css https://ctalvio.github.io/Ultrachromic/titlepage/title_simple.css https://ctalvio.github.io/Ultrachromic/titlepage/title_simple-logo.css https://ctalvio.github.io/Ultrachromic/type/light.css https://ctalvio.github.io/Ultrachromic/type/dark.css https://ctalvio.github.io/Ultrachromic/type/colorful.css https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css https://fonts.googleapis.com/css2; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
+```
+
+If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from an external source.
