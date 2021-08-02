@@ -9,7 +9,10 @@
     border-bottom: none;
 }
 
-
+/*Stop covers from being scrolled*/
+.detailImageContainer .card {
+    position: fixed;
+}	
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
