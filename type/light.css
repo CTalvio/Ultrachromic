@@ -340,6 +340,9 @@ h4,
 .formDialogHeader, .formDialogFooter {
     background-color: #eaeaea !important;
 }
+.formDialogFooter-clear {
+    background-color: transparent !important;
+}
 
 .cardOverlayContainer {
     background-color: rgba(200, 200, 200, 0.7);

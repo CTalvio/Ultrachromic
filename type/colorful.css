@@ -36,6 +36,9 @@
 .formDialogFooter {
     background-color: rgba(var(--accent),0.15) !important;
 }
+.formDialogFooter-clear {
+    background-color: transparent !important;
+}
 .button-flat:hover {
 	background: rgba(var(--accent),0.25);
 }
