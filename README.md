@@ -27,15 +27,15 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 These let you use Ultrachromic using a couple presets. These follow the same look as the old chromic themes.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/presets/monochromic_preset.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/presets/kaleidochromic_preset.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/kaleidochromic_preset.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/presets/novachromic_preset.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/novachromic_preset.css');
 ```
 Only one line is needed, nova and kaleido support custom accents.
 
@@ -54,8 +54,8 @@ Ultrachromic is composed of multiple "parts" allowing you to theme only the part
 fixes.css contains various small tweaks all over the JF UI, an alignment here, a size tweak there. That kind of thing. jf_font.css will make JF use the same font as its logo, for everything. You can use both, one, or none of these.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/fixes.css');
-@import url('https://ctalvio.github.io/Ultrachromic/jf_font.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
 ```
 
 <br />
@@ -66,8 +66,8 @@ fixes.css contains various small tweaks all over the JF UI, an alignment here, a
 These lines are required.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/base.css');
-@import url('https://ctalvio.github.io/Ultrachromic/accentlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
 ```
 
 <br />
@@ -78,11 +78,11 @@ These lines are required.
 If you want to modify the rounding of corners in the UI, include one of these, circlehover keeps the stock circle accent when hovering over things, otherwise the accent will be a rounded square like everythig else.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/rounding.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css');
 ```
 
 <br />
@@ -95,7 +95,7 @@ OR
 A smaller, square aspect ratio style cast list.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/smallercast.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
 ```
 
 <br />
@@ -108,11 +108,11 @@ A smaller, square aspect ratio style cast list.
 A more easily scrolled episode list, there is the option to keep it as a list that is more compact, or turning the episode list into a grid menu.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/episodelist/episodes_compactlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/episodelist/episodes_grid.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_grid.css');
 ```
 
 <br />
@@ -125,11 +125,11 @@ OR
 Transaparent top bar, use one of these. The "-dashboard" option, also makes the bar transparent in the dashboard.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/header/header_transparent-dashboard.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/header/header_transparent.css');
+broken ATM, use the -dashboard option for now
 ```
 
 <br />
@@ -142,11 +142,11 @@ OR
 Login screen styles. The minimalistic option has no frame or prompt text. You can also set a custom background, see further below.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/login/login_minimalistic.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/login/login_frame.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css');
 ```
 
 <br />
@@ -159,11 +159,11 @@ OR
 Input field styles, with borders that highlight when selected, or with no borders, and the background highlights, when selected.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/fields/fields_border.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/fields/fields_noborder.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css');
 ```
 
 <br />
@@ -176,11 +176,11 @@ OR
 Two options, should the indicator be floating, or attached to the corner of the title card.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_floating.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_corner.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
 ```
 
 <br />
@@ -193,19 +193,19 @@ OR
 Dark, light, and colorful type. You must use one of these. If you wish to use an accent color with the dark style, use the "_withaccent" line.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/dark.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/light.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/light.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/colorful.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css');
 ```
 
 <br />
@@ -219,19 +219,19 @@ OR
 Four options, two versions, each version can be used with or without a logo replacing title text.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_simple.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_simple-logo.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_banner.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_banner-logo.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner-logo.css');
 ```
 
 <br />
@@ -244,11 +244,11 @@ OR
 Default or an overlay style progress indicator for library items.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/overlayprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
 ```
 OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/bottombarprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/bottombarprogress.css');
 ```
 
 <br />
@@ -261,11 +261,11 @@ OR
 Additional eye candy. Make items glow on hover, make some UI elements glassy see-through.
 
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
 ```
 AND/OR
 ```css
-@import url('https://ctalvio.github.io/Ultrachromic/effects/glassy.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
 ```
 
 <br />
@@ -316,7 +316,7 @@ add_header Content-Security-Policy ....
 to:
 
 ```
-add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline' https://ctalvio.github.io/Ultrachromic/accentlist.css https://ctalvio.github.io/Ultrachromic/base.css https://ctalvio.github.io/Ultrachromic/bottombarprogress.css https://ctalvio.github.io/Ultrachromic/fixes.css https://ctalvio.github.io/Ultrachromic/jf_font.css https://ctalvio.github.io/Ultrachromic/overlayprogress.css https://ctalvio.github.io/Ultrachromic/rounding.css https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css https://ctalvio.github.io/Ultrachromic/smallercast.css https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_floating.css https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_corner.css https://ctalvio.github.io/Ultrachromic/effects/glassy.css https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css https://ctalvio.github.io/Ultrachromic/effects/scrollfade.css https://ctalvio.github.io/Ultrachromic/episodelist/episodes_compactlist.css https://ctalvio.github.io/Ultrachromic/episodelist/episodes_grid.css https://ctalvio.github.io/Ultrachromic/fields/fields_border.css https://ctalvio.github.io/Ultrachromic/fields/fields_noborder.css https://ctalvio.github.io/Ultrachromic/header/header_transparent.css https://ctalvio.github.io/Ultrachromic/header/header_transparent-dashboard.css https://ctalvio.github.io/Ultrachromic/login/login_frame.css https://ctalvio.github.io/Ultrachromic/login/login_minimalistic.css https://ctalvio.github.io/Ultrachromic/login/login_frame.css https://ctalvio.github.io/Ultrachromic/presets/monochromic_preset.css https://ctalvio.github.io/Ultrachromic/presets/kaleidochromic_preset.css https://ctalvio.github.io/Ultrachromic/presets/novachromic_preset.css https://ctalvio.github.io/Ultrachromic/titlepage/title_banner.css https://ctalvio.github.io/Ultrachromic/titlepage/title_banner_logo.css https://ctalvio.github.io/Ultrachromic/titlepage/title_simple.css https://ctalvio.github.io/Ultrachromic/titlepage/title_simple-logo.css https://ctalvio.github.io/Ultrachromic/type/light.css https://ctalvio.github.io/Ultrachromic/type/dark.css https://ctalvio.github.io/Ultrachromic/type/colorful.css https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css https://fonts.googleapis.com/css2; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
+add_header Content-Security-Policy "default-src https: data: blob:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/bottombarprogress.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/scrollfade.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_grid.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_noborder.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_frame.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/monochromic_preset.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/kaleidochromic_preset.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/presets/novachromic_preset.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_banner_logo.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/light.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css https://fonts.googleapis.com/css2; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 ```
 
 If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from an external source.
