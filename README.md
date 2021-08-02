@@ -258,7 +258,7 @@ OR
 
 ![image](https://user-images.githubusercontent.com/4365015/127781073-c2a2a1f1-4c60-4c57-afa9-13a4775489bb.png)
 
-Additional eye candy. Make items glow on hover, make some UI elements glassy see-through.
+Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. The last one is hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
@@ -266,6 +266,10 @@ Additional eye candy. Make items glow on hover, make some UI elements glassy see
 AND/OR
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
+```
+AND/OR
+```css
+@import url('https://ctalvio.github.io/Monochromic/backdrop-hack_style.css');
 ```
 
 <br />
