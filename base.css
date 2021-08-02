@@ -1,6 +1,15 @@
 :root {--indicator: 0, 164, 220;}
 :root {--selection: 0, 164, 220;}
 
+/*Mobile tweaks*/
+.layout-mobile .detailPagePrimaryContainer {
+    background: transparent;
+}
+.layout-mobile .adminDrawerLogo {
+    border-bottom: none;
+}
+
+
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;

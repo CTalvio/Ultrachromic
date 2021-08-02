@@ -36,3 +36,6 @@
     padding: .3em .6em;
     color: #fff;
 }
+.layout-mobile .listItemImageButton {
+    background: rgba(0, 0, 0, 0);
+}

@@ -1,18 +1,3 @@
-/*Change backdrop behaviour on mobile pre-10.7.0*/
-@media all and (max-width: 32em) {
-  .itemBackdrop {
-    width: 100vw!important; 
-    height: 100vh!important; 
-    position: fixed;
-  }
-  .detailPageWrapperContainer {
-    margin-top: 5em;
-  }
-  .itemBackdrop {
-    filter: blur(45px) saturate(200%) contrast(160%) brightness(25%);
-  }
-}
-
 /*Enlarge button row on item page, even more on mobile*/
 .mainDetailButtons {
 	font-size: 120%;
