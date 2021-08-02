@@ -140,6 +140,15 @@
 .cardImageContainer {
     transition: 0.7s;
 }
+.checkboxOutline,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.selectLabel
+.inputLabel,
+.textareaLabel {
+  transition: 0.1s;
+}
 
 /*Hover background for section title buttons*/
 .button-flat:hover {
@@ -172,4 +181,9 @@
 /*Remove divider on list items*/
 .listItem-border {
     border-color: rgba(255, 255, 255, 0) !important;
+}
+
+/*Fix footers/headers displaying on small pop-ups*/
+.formDialogFooter-clear {
+    background-color: transparent !important;
 }
