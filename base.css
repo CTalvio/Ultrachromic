@@ -201,6 +201,7 @@
 }
 
 /*Fix footers/headers displaying on small pop-ups*/
-.formDialogFooter-clear {
+.formDialogFooter-clear,
+.formDialogHeader-clear {
     background-color: transparent !important;
 }
