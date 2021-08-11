@@ -1,6 +1,11 @@
 :root {--indicator: 0, 164, 220;}
 :root {--selection: 0, 164, 220;}
 
+.emby-textarea {
+  font-family: monospace;
+  font-size: 10pt;
+}
+
 /*Mobile tweaks*/
 .layout-mobile .detailPagePrimaryContainer {
     background: transparent;
