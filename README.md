@@ -10,7 +10,9 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 
 **NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
 
-## Features
+<br />
+
+### Features
 - Themes **EVERYTHING**
 - Three types of styles to choose from
 - Extensive additional options
@@ -21,8 +23,9 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 - Works well on mobile, more compact and aligned UI
 - Various small tweaks and fixes to the stock UI
 
+<br />
 
-## Single line presets
+### Single line presets
 
 These let you use Ultrachromic using a couple presets. These follow the same look as the old chromic themes.
 
@@ -47,7 +50,6 @@ Only one line is needed, nova and kaleido support custom accents.
 Ultrachromic is composed of multiple "parts" allowing you to theme only the parts you want, and to have some choice in how you want things themed. Simply add one import after another, in the order they are listed here. Simply omit the options you do not want to use.
 
 <br />
-<br />
 
 ### 1. Recommended
 
@@ -59,7 +61,6 @@ fixes.css contains various small tweaks all over the JF UI, an alignment here, a
 ```
 
 <br />
-<br />
 
 ### 2. Required
 
@@ -70,7 +71,6 @@ These lines are required.
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
 ```
 
-<br />
 <br />
 
 ### 3. Rounding
@@ -86,7 +86,6 @@ OR
 ```
 
 <br />
-<br />
 
 ### 4. Smaller cast list
 
@@ -98,7 +97,6 @@ A smaller, square aspect ratio style cast list.
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
 ```
 
-<br />
 <br />
 
 ### 5. Compact episode list
@@ -116,7 +114,6 @@ OR
 ```
 
 <br />
-<br />
 
 ### 6. Transparent top bar
 
@@ -132,7 +129,6 @@ OR
 broken ATM, use the -dashboard option for now
 ```
 
-<br />
 <br />
 
 ### 7. Login screen
@@ -150,7 +146,6 @@ OR
 ```
 
 <br />
-<br />
 
 ### 8. Input fields
 
@@ -167,7 +162,6 @@ OR
 ```
 
 <br />
-<br />
 
 ### 9. Watched/Unwatched indicators
 
@@ -183,7 +177,6 @@ OR
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
 ```
 
-<br />
 <br />
 
 ### 10. Choose type
@@ -208,7 +201,6 @@ OR
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark_withaccent.css');
 ```
 
-<br />
 <br />
 
 ### 11. Title page
@@ -235,7 +227,6 @@ OR
 ```
 
 <br />
-<br />
 
 ### 12. Progress bar
 
@@ -252,13 +243,12 @@ OR
 ```
 
 <br />
-<br />
 
 ### 13. Effects
 
 ![image](https://user-images.githubusercontent.com/4365015/127781073-c2a2a1f1-4c60-4c57-afa9-13a4775489bb.png)
 
-Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. Pan animation animates the backdrop with a slow pan. The last one is hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
+Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. Pan animation animates the backdrop with a slow pan. The last one is a hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
@@ -277,7 +267,6 @@ AND/OR
 ```
 
 <br />
-<br />
 
 ### 14. Manual options
 
@@ -295,7 +284,6 @@ There are some manual options you can define if you want, after the import lines
 :root {--rounding: 12px;}
 ```
 
-<br />
 <br />
 
 ### Extras
