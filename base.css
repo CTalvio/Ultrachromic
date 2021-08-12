@@ -10,6 +10,17 @@
     padding-top: 1em;
 }
 
+/*Theme user setting tab buttons*/
+div[data-role="controlgroup"] a.ui-btn-active {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+}
+
+div[data-role="controlgroup"] a[data-role="button"] {
+  display: table-cell !important;
+  margin: 0 !important;
+}
+
 /*Mobile tweaks*/
 .layout-mobile .detailPagePrimaryContainer {
     background: transparent;
