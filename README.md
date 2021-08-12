@@ -17,7 +17,7 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 - Customizable accent color
 - Choose how blurry you want your backdrops
 - Squared or rounded UI
-- Two options for progress bars
+- Options for progress bars, title pages, backdrops, logos...
 - Works well on mobile, more compact and aligned UI
 - Various small tweaks and fixes to the stock UI
 
