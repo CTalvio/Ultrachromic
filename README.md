@@ -258,7 +258,7 @@ OR
 
 ![image](https://user-images.githubusercontent.com/4365015/127781073-c2a2a1f1-4c60-4c57-afa9-13a4775489bb.png)
 
-Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. The last one is hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
+Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. Pan animation animates the backdrop with a slow pan. The last one is hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
@@ -266,6 +266,10 @@ Additional eye candy. Make items glow on hover, make some UI elements glassy see
 AND/OR
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
+```
+AND/OR
+```css
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css');
 ```
 AND/OR
 ```css
@@ -299,7 +303,6 @@ There are some manual options you can define if you want, after the import lines
 [Check out these custom icons by @prayag17!](https://github.com/prayag17/Jellyfin-Icons)
 
 Also a general thanks to prayag17, I've joinked some code from him for this project. (grid episodes, title logo)
-
 
 <br />
 <br />
