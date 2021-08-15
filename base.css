@@ -217,6 +217,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 /*Fix footers/headers displaying on small pop-ups*/
 .formDialogFooter-clear,
-.formDialogHeader-clear {
+.formDialogHeader-clear,
+.innerCardFooterClear {
     background-color: transparent !important;
 }

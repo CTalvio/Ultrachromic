@@ -36,9 +36,13 @@
 .formDialogFooter {
     background-color: rgba(var(--accent),0.15) !important;
 }
-.formDialogFooter-clear {
+/*Fix footers/headers displaying on small pop-ups*/
+.formDialogFooter-clear,
+.formDialogHeader-clear,
+.innerCardFooterClear {
     background-color: transparent !important;
 }
+
 .button-flat:hover {
 	background: rgba(var(--accent),0.25);
 }

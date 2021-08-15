@@ -340,9 +340,13 @@ h4,
 .formDialogHeader, .formDialogFooter {
     background-color: #eaeaea !important;
 }
-.formDialogFooter-clear {
+/*Fix footers/headers displaying on small pop-ups*/
+.formDialogFooter-clear,
+.formDialogHeader-clear,
+.innerCardFooterClear {
     background-color: transparent !important;
 }
+
 
 .cardOverlayContainer {
     background-color: rgba(200, 200, 200, 0.7);
