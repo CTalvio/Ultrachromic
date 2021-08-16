@@ -230,9 +230,9 @@ OR
 
 ### 12. Progress bar
 
-![image](https://user-images.githubusercontent.com/4365015/127778728-c1f4bdb9-c4df-4659-a75e-c95089935412.png)
+![Screenshot_20210817_003507](https://user-images.githubusercontent.com/4365015/129632467-b545bcfc-3dbe-430d-8d3c-e89355eae29e.png)
 
-Default or an overlay style progress indicator for library items.
+Default, overlay or floating style progress indicator for library items.
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
@@ -241,6 +241,11 @@ OR
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/bottombarprogress.css');
 ```
+OR
+```css
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/progress/floating.css');
+```
+
 
 <br />
 
