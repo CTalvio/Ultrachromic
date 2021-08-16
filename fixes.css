@@ -2,10 +2,22 @@
 .mainDetailButtons {
 	font-size: 120%;
 }
+
+/*Add fixes, start of file*/
+@media all and (min-width: 100em){
+  .button-flat {
+    margin: .2em !important;
+    padding: .85em !important;
+  }
+}
 @media all and (max-width: 100em){
   .mainDetailButtons {
-	  font-size: 155%;
-	}
+    font-size: 155%;
+  }
+  .button-flat {
+    max-width: 20vw;
+    max-height: 20vw;
+  }
 }
 
 /*Media player*/
