@@ -1,6 +1,22 @@
 @supports (backdrop-filter: blur(15px)) {
-  .dialog, .mainDrawer, .toast, .appfooter {
+  .dialog,
+  .mainDrawer,
+  .toast,
+  .appfooter {
     backdrop-filter: blur(15px);
     background-color: rgba(0, 0, 0, 0.35);
+  }
+  .paper-icon-button-light:hover,
+  #itemDetailPage .innerCardFooter,
+  #dashboardPage .backgroundProgress > div,
+  .cardOverlayButtonIcon {
+    backdrop-filter: blur(4px);
+  }
+  @media all and (max-width: 70em){
+    .cardOverlayButtonIcon {
+      background-color: rgba(0, 0, 0, 0.35) !important;
+    }
+  .indicator {
+    backdrop-filter: blur(2px);
   }
 }

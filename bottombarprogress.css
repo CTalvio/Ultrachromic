@@ -1,13 +1,11 @@
-.itemProgressBar {
-  height: 5px;
-  background: rgba(0,0,0,.5);
+#itemDetailPage .itemProgressBar,
+#indexPage .itemProgressBar{
+    height: 5px;
+    background: rgba(0, 0, 0, 0.45);
 }
-
-.playbackProgress>div, .itemProgressBarForeground {
-    background-color: rgba(var(--accent), 0.75) !important;
+.itemProgressBarForeground {
+    background-color: rgba(var(--accent),0.75);
 }
-
-.transcodingProgress>div {
-    background-color: rgba(var(--accent), 0.35) !important;
+.transcodingProgress > div {
+    background-color: rgba(var(--accent), 0.35);
 }
-

@@ -1,9 +1,12 @@
-.itemProgressBar {
+#itemDetailPage .itemProgressBar,
+#indexPage .itemProgressBar {
     height: 2000em;
     background: #0000;
 }
-
 .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
-    background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0);
 	margin: 0;
+}
+.itemProgressBarForeground {
+    background-color: rgba(var(--accent), 0.35);
 }
