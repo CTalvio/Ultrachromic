@@ -8,14 +8,17 @@
   }
   .paper-icon-button-light:hover,
   #itemDetailPage .innerCardFooter,
-  #dashboardPage .backgroundProgress > div,
-  .cardOverlayButtonIcon {
+  #dashboardPage .backgroundProgress > div {
     backdrop-filter: blur(4px);
   }
   @media all and (max-width: 70em){
     .cardOverlayButtonIcon {
       background-color: rgba(0, 0, 0, 0.35) !important;
     }
+    .cardOverlayButtonIcon {
+    backdrop-filter: blur(4px);
+    }
+  }
   .indicator {
     backdrop-filter: blur(2px);
   }
