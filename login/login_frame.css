@@ -20,6 +20,9 @@
     width: 24em;
     border-radius: var(--rounding);
 }
+#loginPage .squareCard {
+    width: 33%;
+}
 #loginPage form {
     padding-top: 4em;
 }
