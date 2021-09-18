@@ -23,7 +23,24 @@
 #homeScreenPreferencesPage,
 #languagePreferencesPage,
 #quickConnectPreferencesPage {
-  margin-top: 60px;
+  margin-top: 60px !important;
+  overflow: scroll;
+}
+
+/*Achieves similar effect without use of mask-image, foregoing the cool fade effect*/
+#dashboardPage,
+#dashboardGeneralPage,
+#userProfilesPage,
+#devicesPage,
+#serverActivityPage,
+#liveTvStatusPage,
+#liveTvSettingsPage,
+#networkingPage,
+#apiKeysPage,
+#logPage,
+#notificationSettingsPage,
+#scheduledTasksPage,
+#itemDetailPage {
   padding-top: 0px !important;
   overflow: scroll;
 }
