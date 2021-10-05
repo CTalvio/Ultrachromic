@@ -6,13 +6,11 @@ This is a custom theme for Jellyfin mediaserver created using CSS overrides. Not
 
 ![Untitled](https://user-images.githubusercontent.com/4365015/127774204-03957527-7178-4ea2-8674-d83fe6a97d1c.png)
 
-To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
-
 **NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
 
 <br />
 
-### Features
+## Features
 - Themes **EVERYTHING**
 - Three types of styles to choose from
 - Extensive additional options
@@ -25,7 +23,12 @@ To use the theme copy paste one of the presets, or follow the instructions to cr
 
 <br />
 
-### Single line presets
+# How to
+To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
+
+<br />
+
+## Single line presets
 
 These let you use Ultrachromic using a couple presets. These follow the same look as the old chromic themes.
 
