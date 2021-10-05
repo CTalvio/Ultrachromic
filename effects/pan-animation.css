@@ -44,7 +44,7 @@
   .backdropImage {
     background-size: 150% 150%;
     background-position: 99% 1%;
-    animation: backgroundScroll 210s ease;
+    animation: backgroundScroll 630s ease;
     animation-iteration-count: infinite;
   }
 }
