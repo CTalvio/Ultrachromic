@@ -10,7 +10,7 @@
   #musicRecommendedPage {
     margin-top: 68px;
     padding-top: 0px !important;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
@@ -22,6 +22,11 @@
   #musicRecommendedPage {
     margin-top: 130px;
     padding-top: 0.5em !important;
-    overflow: scroll;
+    overflow-y: scroll;
   }
+}
+
+.force-scroll {
+    overflow-y: auto;
+    overflow-x: auto;
 }
