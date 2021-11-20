@@ -122,14 +122,10 @@ OR
 
 ![image](https://user-images.githubusercontent.com/4365015/127768778-056a68eb-402f-49d0-8277-c11a71edbbe5.png)
 
-Transaparent top bar, use one of these. The "-dashboard" option, also makes the bar transparent in the dashboard.
+Transaparent top bar.
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css');
-```
-OR
-```css
-broken ATM, use the -dashboard option for now
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css');
 ```
 
 <br />
