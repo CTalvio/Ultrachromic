@@ -6,10 +6,6 @@
   font-size: 10pt;
 }
 
-.content-primary {
-    padding-top: 1em;
-}
-
 /*Theme user setting tab buttons*/
 div[data-role="controlgroup"] a.ui-btn-active {
   background: rgba(0, 0, 0, 0.5) !important;

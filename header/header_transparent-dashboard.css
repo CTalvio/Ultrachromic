@@ -1,77 +1,24 @@
-/*Banner transparency*/
-.skinHeader {
-  background: none !important; 
-  background-color: rgba(0, 0, 0, 0) !important;
+.skinHeader-withBackground {
+    background-color: transparent;
 }
 
-/*Achieves similar effect without use of mask-image, foregoing the cool fade effect*/
-#dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#devicesPage,
-#serverActivityPage,
-#liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
-#itemDetailPage,
-#userImagePage,
-#displayPreferencesPage,
-#homeScreenPreferencesPage,
-#languagePreferencesPage,
-#quickConnectPreferencesPage {
-  margin-top: 60px !important;
-  overflow: scroll;
-}
-
-/*Achieves similar effect without use of mask-image, foregoing the cool fade effect*/
-#dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#devicesPage,
-#serverActivityPage,
-#liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
-#itemDetailPage {
-  padding-top: 0px !important;
-  overflow: scroll;
-}
-
+/*Pages the have single unit height taskbar*/
 @media all and (min-width: 100em){
   #indexPage,
   #moviesPage,
   #tvRecommendedPage,
   #musicRecommendedPage {
-    margin-top: 70px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage {
-    margin-top: 60px;
+    margin-top: 68px;
     padding-top: 0px !important;
     overflow: scroll;
   }
 }
 
+/*Pages the have two unit height taskbar*/
 @media all and (max-width: 100em){
   #indexPage,
   #moviesPage,
   #tvRecommendedPage,
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage,
   #musicRecommendedPage {
     margin-top: 130px;
     padding-top: 0.5em !important;
