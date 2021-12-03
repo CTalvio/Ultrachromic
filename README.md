@@ -22,7 +22,9 @@ This is a custom theme for Jellyfin mediaserver created using CSS overrides. Not
 <br />
 
 # How to
-To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. **Adding modules after a preset may or may not work**, do not open issues if you try to do things this way. Either use a preset, or custom combination, not a mix both, this is not a use case I will be testing and guaranteeing to work.
+To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
+
+**Adding modules after a preset may or may not work**, do not open an issue if you try to do things this way and it doesn't work. Either use a preset or a custom combination, not a mix of both, as that is not a use case I will be testing and guaranteeing to work.
 
 **NOTE: Theme may not work when using reverse proxy**, check the bottom section of this readme for more info.
 
