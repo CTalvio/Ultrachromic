@@ -381,14 +381,6 @@ progress::-webkit-progress-value {
   background-color: rgba(var(--accent),0.5) !important;
 }
 
-.emby-checkbox:checked + span + .checkboxOutline,
-.emby-textarea:focus,
-.emby-select-withcolor:focus,
-.emby-input:focus,
-.itemSelectionPanel {
-  border: 0.01em solid rgba(var(--accent),0.5) !important;
-}
-
 .upNextDialog-countdownText {
   color: rgba(var(--accent));
 }
