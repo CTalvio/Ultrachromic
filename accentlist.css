@@ -108,3 +108,4 @@ progress::-webkit-progress-value {
 .syncPlayIconCircle {
   color: rgba(var(--accent),1) !important;
   text-shadow: none !important;
+}
