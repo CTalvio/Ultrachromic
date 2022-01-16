@@ -134,6 +134,15 @@ div[data-role="controlgroup"] a[data-role="button"] {
     min-width: 12em;
     margin: 0.4em;
 }
+@media all and (max-width: 26em){
+  .homeLibraryButton {
+    min-width: 45%;
+    width: auto !important;
+  }
+}
+.homeLibraryButton {
+  width: auto !important;
+}
 .listItem:hover {
     transition: 0.2s;
     background: rgba(0, 0, 0, 0.4);
