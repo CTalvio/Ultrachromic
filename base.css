@@ -61,6 +61,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
   top: 0.5em;
 }
 
+.mediaSourceIndicator {
+  left: 0.5em;
+  top: 0.5em;
+}
+
 @media all and (min-width: 70em){
   .cardOverlayFab-primary {
     background-color: #00000000;

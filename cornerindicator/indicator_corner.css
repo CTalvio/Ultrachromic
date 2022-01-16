@@ -19,3 +19,13 @@
 .playedIndicator, .innerCardFooter {
   background: rgba(0,0,0,0.4)
 }
+
+.mediaSourceIndicator {
+  left: 0;
+  top: 0;
+}
+.mediaSourceIndicator {
+  border-radius: var(--rounding) 0px !important;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.4)
+}
