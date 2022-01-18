@@ -1,9 +1,9 @@
 /*Topbarprogress*/
 #itemDetailPage .itemProgressBar,
 #indexPage .itemProgressBar {
-    background: rgba(0, 0, 0, .3) !important;
+    background: rgba(0, 0, 0, .2) !important;
     height: 4px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .6);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .6);
     border: solid 0.01em rgba(248, 248, 242, .1) !important;
 }
 
