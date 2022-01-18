@@ -1116,14 +1116,14 @@ progress {
     top: 0;
     bottom: 0;
     margin: 0;
-    /* border: solid 0.02em rgba(var(--accent),0.6);
+    /* border: solid 0.02em rgba(var(--accent),0.6);*/
 }
 
 #itemDetailPage .itemProgressBarForeground,
 #indexPage .itemProgressBarForeground {
     background: rgba(0, 164, 220, 1);
     /*border: solid 0.02em rgba(var(--accent), .6);*/
-    /*border-radius: var(--rounding);*/
+    border-radius: var(--rounding);
     /*box-shadow: 0px 0px 1px rgba(var(--accent), .6) !important;*/
     /*border-right: solid .02em rgba(var(--accent), 1) !important;*/
 }
