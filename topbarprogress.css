@@ -4,7 +4,7 @@
     background: rgba(0, 0, 0, .3);
     height: 4px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, .6);
-    border: solid 0.01em rgba(248, 248, 242, .1);
+    border: solid 0.01em rgba(248, 248, 242, .2);
 }
 
 .innerCardFooter,
