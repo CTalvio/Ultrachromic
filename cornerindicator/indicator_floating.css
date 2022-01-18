@@ -11,3 +11,9 @@
   background: rgba(0,0,0,0.4);
   box-shadow: none;
 }
+
+.mediaSourceIndicator {
+  background: rgba(0,0,0,0.4);
+  box-shadow: none;
+  border-radius: var(--rounding);
+}

@@ -14,9 +14,8 @@
   .mainDetailButtons {
     font-size: 155%;
   }
-  .button-flat {
-    max-width: 20vw;
-    max-height: 20vw;
+  .detailButton {
+    max-width: 15vw !important;
   }
 }
 

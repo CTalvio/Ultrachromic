@@ -61,6 +61,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
   top: 0.5em;
 }
 
+.mediaSourceIndicator {
+  left: 0.5em;
+  top: 0.5em;
+}
+
 @media all and (min-width: 70em){
   .cardOverlayFab-primary {
     background-color: #00000000;
@@ -133,6 +138,15 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .homeLibraryButton {
     min-width: 12em;
     margin: 0.4em;
+}
+@media all and (max-width: 26em){
+  .homeLibraryButton {
+    min-width: 45%;
+    width: auto !important;
+  }
+}
+.homeLibraryButton {
+  width: auto !important;
 }
 .listItem:hover {
     transition: 0.2s;
