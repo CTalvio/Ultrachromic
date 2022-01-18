@@ -1134,13 +1134,13 @@ progress {
 .raised.homeLibraryButton {
     box-shadow: 0px 0px 5px rgba(var(--accent), 0);
     box-shadow: 0 0 4px 0 rgba(0,0,0,.6) !important;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,.6);
     /*border: solid 0.02em rgba(var(--accent), .4) !important;*/
     background-color: rgba(29, 29.7, 38, .90) !important;
 }
 
 .cardOverlayButtonIcon {
-    box-shadow: 0 0 4px 0 rgba(0,0,0,.6) !important;
+    /*box-shadow: 0 0 4px 0 rgba(0,0,0,.6) !important;*/
+    box-shadow: 0 0 4px 0 rgba(248, 248, 242,.6) !important;
     background-color: rgba(29, 29.7, 38, .90) !important;
     /*border: solid 0.001em rgba(248, 248, 242, .1);*/
 }
