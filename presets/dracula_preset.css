@@ -216,7 +216,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 @media all and (max-width: 70em){
