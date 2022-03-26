@@ -11,6 +11,6 @@
   padding-top: .5em;
   padding-bottom: .5em;
 }
-.detailImageContainer .card.backdropCard {
-    top: 40vh;
+.layout-desktop .detailImageContainer .card {
+  top: 18vh;
 }
