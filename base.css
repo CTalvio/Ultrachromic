@@ -77,12 +77,19 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
+/* Play button hovering (for low width windows) */
 @media all and (max-width: 70em){
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
   .cardOverlayButtonIcon {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .cardOverlayButton {
-    padding: 0.5em;
+    padding: 0.25em;
   }
 }
 
