@@ -26,7 +26,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /*Stop covers from being scrolled*/
-.detailImageContainer .card {
+.layout-desktop .detailImageContainer .card {
     position: fixed !important;
 }
 /*Top "task bar" enlarge text*/
