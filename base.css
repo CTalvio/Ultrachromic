@@ -25,9 +25,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
     border-bottom: none;
 }
 
-/*Stop covers from being scrolled*/
-.detailImageContainer .card {
+/*Stop covers from being scrolled on desktop*/
+.layout-desktop .detailImageContainer .card {
     position: fixed !important;
+}
+.layout-mobile .detailImageContainer .card {
+    position: absolute !important;
 }
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
