@@ -172,23 +172,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /*ANIMATIONS*/
-/*Fade as images load*/
-.blurhash-canvas {
-    transition: 0.2s;
-}
-.cardImageContainer {
-    transition: 0.7s;
-}
-.checkboxOutline,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
-.selectLabel
-.inputLabel,
-.textareaLabel {
-  transition: 0.1s;
-}
-
 /*Hover background for section title buttons*/
 .button-flat:hover {
 	background: rgba(0, 164, 220, 0.2);
