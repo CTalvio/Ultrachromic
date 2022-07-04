@@ -17,6 +17,12 @@
 .layout-desktop .detailRibbon {
   background: rgba(0,0,0,0) !important;
 }
+
+/* Fix poster image not showing in high width windows */
+.layout-desktop .detailImageContainer .card {
+  top: 18vh;
+}
+
 @media all and (min-width: 32em){
   .itemBackdrop {
     display: none;
