@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.35);
   }
   .paper-icon-button-light:hover,
-  #itemDetailPage .innerCardFooter,
+  #itemDetailPage .itemProgressBar,
   #dashboardPage .backgroundProgress > div {
     backdrop-filter: blur(4px);
   }
