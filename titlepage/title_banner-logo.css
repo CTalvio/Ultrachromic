@@ -1,4 +1,8 @@
 /*Alternate itempage*/
+.detailImageContainer .card {
+  position: fixed !important;
+  top: 20% !important;
+}
 .itemBackdrop {
   height: 31vh !important;
   display: inherit;
