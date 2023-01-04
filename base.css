@@ -6,6 +6,11 @@
   font-size: 10pt;
 }
 
+.card.show-animation:focus>.cardBox {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
 /*Theme user setting tab buttons*/
 div[data-role="controlgroup"] a.ui-btn-active {
   background: rgba(0, 0, 0, 0.5) !important;

@@ -1,3 +1,10 @@
+.emby-button.show-focus:focus {
+  background: rgba(var(--accent),0.5) !important;
+}
+.paper-icon-button-light.show-focus:focus {
+    color: rgba(var(--accent)) !important;
+}
+
 /*Title text buttons*/
 button-flat:hover {
     color: rgba(var(--accent)) !important;
