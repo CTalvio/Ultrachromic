@@ -95,26 +95,31 @@
 .layout-mobile .listItemIndicators {
   right: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   z-index: 0;
 }
 
 .layout-mobile .playedIndicator {
-  width: 100%;
-  height: 100%;
+  width: 2em;
+  height: 2em;
   font-size: 1.2rem;
+  position: absolute;
+  top: 0.65em;
+  right: 8.4em;
+  box-shadow: none;
 }
 
 .layout-mobile .listItemIndicators .indicatorIcon.check {
-  position: absolute;
-  top: .55em;
-  right: 5.4em;
   z-index: 2;
 }
 
 .layout-mobile .listItemBodyText {
-  max-width: 10rem;
+  max-width: 36vw;
+}
+
+@media all and (min-width: 50em) {
+  .layout-mobile .listItemBodyText {
+    max-width: 100%;
+  }
 }
 
 .layout-mobile .listItem .playedIndicator {
