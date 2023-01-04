@@ -1,8 +1,5 @@
 /*Tweak series/movie/album title screen*/
-.detailImageContainer .card {
-  position: fixed !important;
-  top: 20% !important;
-}
+
 .detailSectionContent {
   max-width: 66em;
 }

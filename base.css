@@ -24,6 +24,9 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .layout-mobile .adminDrawerLogo {
     border-bottom: none;
 }
+.layout-mobile .itemBackdrop {
+    margin-top: 4rem;
+}
 
 /*Stop covers from being scrolled on desktop*/
 .layout-desktop .detailImageContainer .card {
