@@ -21,6 +21,8 @@ This is a custom theme for Jellyfin mediaserver created using CSS overrides. Not
 
 <br />
 
+<a href='https://ko-fi.com/mentaledge' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+
 # How to
 To use the theme copy paste one of the presets, or follow the instructions to create a custom combination, paste that into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
 
