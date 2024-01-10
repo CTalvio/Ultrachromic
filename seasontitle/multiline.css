@@ -1,0 +1,25 @@
+.detailPageContent .cardBox > .cardText {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.detailPageContent .cardBox button {
+    white-space: normal;
+}
+
+.detailPageContent .cardBox > .cardScalable {
+    --rounding: 5px 5px 0 0 !important;
+}
+
+.detailPageContent .cardBox > .cardText {
+    padding-top: 6px;
+    max-height: 60px;
+}
+
+.detailPageContent .cardBox::after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
