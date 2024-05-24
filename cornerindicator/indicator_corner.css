@@ -2,8 +2,8 @@
 
 .cardIndicators,
 .listItemIndicators {
-  right: 0;
-  top: 0;
+  right: 0 !important;
+  top: 0 !important;
 }
 .innerCardFooter {
   border-radius: 0px var(--rounding) !important;
