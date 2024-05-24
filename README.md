@@ -258,7 +258,7 @@ OR
 
 Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. Pan animation animates the backdrop with a slow pan. The last one is a hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
 
-Known issues: Pan-animation can cause flickering on chromium based browsers when the backdrop is also modified. Glassy is not supported by firefox, unless some flags are set to enable it (though even this is currently broken in firefox).
+Known issues: Pan-animation can cause flickering on chromium based browsers when the backdrop is also modified.
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
