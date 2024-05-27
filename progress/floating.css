@@ -1,21 +1,25 @@
-
 /*New progress bar*/
 #indexPage .innerCardFooterClear,
+.libraryPage .innerCardFooterClear,
 #itemDetailPage .innerCardFooterClear {
     background-color: transparent !important;
     box-shadow: none;
 }
 #indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground,
 #indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
 #itemDetailPage .itemProgressBar {
     border-radius: var(--rounding);
 }
 #indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground  {
     background-color: rgba(var(--accent), 0.95) !important;
 }
 #indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
 #itemDetailPage .itemProgressBar {
     height: 6px;
     background: rgba(0,0,0,0.4);
@@ -24,12 +28,14 @@
 /*Accommodate play button on mobile*/
 @media all and (max-width: 100em){
   #indexPage .itemProgressBar,
+  .libraryPage .itemProgressBar,
   #itemDetailPage .itemProgressBar {
     margin-right: 3.2em;
   }
 }
 @supports (backdrop-filter: blur(15px)) {
   #indexPage .itemProgressBar,
+  .libraryPage .itemProgressBar,
   #itemDetailPage .itemProgressBar{
     backdrop-filter: blur(4px);
     background: rgba(0, 0, 0, 0.35) !important;
