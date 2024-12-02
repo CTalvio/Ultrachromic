@@ -1,0 +1,25 @@
+/*Topbarprogress*/
+#itemDetailPage .itemProgressBar,
+#indexPage .itemProgressBar {
+    background: rgba(0, 0, 0, .2) !important;
+    height: 4px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .6);
+    border-bottom: solid 0.01em rgba(248, 248, 242, .1) !important;
+}
+
+.innerCardFooter,
+.fullInnerCardFooter,
+.innerCardFooterClear {
+    background: rgba(0,0,0,0);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+#itemDetailPage .itemProgressBarForeground,
+#indexPage .itemProgressBarForeground {
+    border-radius: var(--rounding);
+    background: rgba(var(--accent), 1);
+}
