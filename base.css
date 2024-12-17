@@ -230,3 +230,9 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .innerCardFooterClear {
     background-color: transparent !important;
 }
+
+/*Theme slider marker style*/
+.sliderMarker {
+  width: 3px;
+  border-radius: 2px;
+}
