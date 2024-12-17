@@ -1,4 +1,5 @@
 /*This file contains color and style changes for the dark theme type*/
+:root {--accent: 255, 255, 255;}
 :root {--selection: 120, 120, 120;}
 
 .transcodingProgress > div, .itemProgressBarForeground {
