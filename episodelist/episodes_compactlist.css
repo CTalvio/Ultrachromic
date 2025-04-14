@@ -6,7 +6,7 @@
   padding: 0;
 }
 .secondary.listItem-overview.listItemBodyText {
-  height: 61px; 
+  height: unset !important;
   margin: 0;
 }
 .listItemImageButton {
@@ -15,20 +15,20 @@
 }
 @media all and (min-width: 100em){
   .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 110px;
+    height: 160px !important;
   }
   .listItem-content {
-    height: 115px;
+    height: unset !important;
   }
   .secondary.listItem-overview.listItemBodyText {
-    height: 4em; 
+    height: unset !important;
     margin: 0;
   }
 }
 @media all and (max-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
-  .listItem-content {height: 85px;}
-  .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+  .listItemImage.listItemImage-large.itemAction.lazy {height: 160px !important;}
+  .listItem-content {height: unset !important;}
+  .secondary.listItem-overview.listItemBodyText {height: unset !important; margin: 0;}
 }
 
 .missingIndicator, .unairedIndicator {
