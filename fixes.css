@@ -45,7 +45,7 @@
   .detailRibbon {
     padding-left: 28.45vw !important;
   }
-	[dir=ltr].detailPagePrimaryContent {
+  [dir=ltr] .detailPagePrimaryContent {
     padding-left: 28.45vw !important;
   }
   .detailPageContent {
@@ -59,7 +59,7 @@
   .detailRibbon {
     padding-left: 23.45vw !important;
   }
-  [dir=ltr].detailPagePrimaryContent {
+  [dir=ltr] .detailPagePrimaryContent {
     padding-left: 23.45vw !important;
   }
   .detailPageContent {
