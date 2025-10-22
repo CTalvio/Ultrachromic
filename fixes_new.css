@@ -1,0 +1,134 @@
+/*Enlarge button row on item page, even more on mobile*/
+.mainDetailButtons {
+	font-size: 120%;
+}
+
+/*Add fixes, start of file*/
+@media all and (min-width: 100em){
+  .button-flat {
+    margin: .2em !important;
+    padding: .85em !important;
+  }
+}
+@media all and (max-width: 100em){
+  .mainDetailButtons {
+    font-size: 155%;
+  }
+  .detailButton {
+    max-width: 15vw !important;
+  }
+}
+
+/*Media player*/
+.startTimeText, .endTimeText {
+    width: 3.4em;
+    display: block;
+    text-align: center;
+}
+.osdTitle {
+  margin-left: 0.5em;
+}
+
+.videoOsdBottom {
+    padding-top: 1em;
+}
+
+.skinHeader-withBackground.osdHeader {
+    height: 5em;
+}
+
+/*Accommodate ultrawide aspect ratios*/
+@media (min-aspect-ratio: 1.98/1) {
+  .detailImageContainer .card {
+    width: 21vw !important ;
+  }
+  .detailRibbon {
+    padding-left: 28.45vw !important;
+  }
+  .detailPagePrimaryContent {
+    padding-left: 28.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 28.45vw !important;
+  }
+}
+@media (min-aspect-ratio: 2.7/1) {
+  .detailImageContainer .card {
+    width: 16vw !important;
+  }
+  .detailRibbon {
+    padding-left: 23.45vw !important;
+  }
+  .detailPagePrimaryContent {
+    padding-left: 23.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 23.45vw !important;
+  }
+}
+
+/*Tweak entry field padding and alignment/sizes*/
+.emby-input,
+.emby-textarea {
+  padding: .4em .55em;
+}
+.emby-select {
+  padding: .35em 1.9em .35em .35em;
+}
+.selectArrow {
+    margin-top: 1.05em;
+}
+
+/*Fix weird shevron off centering*/
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+ padding-top:0em;
+}
+.sectionTitle {
+	margin-left: .4em !important;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
+}
+.sectionTitleTextButton > .material-icons {
+    margin: 0;
+}
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding-top: .2em;
+}
+
+/*Fix the UI shifting around*/
+.nowPlayingBarCurrentTime {
+    width: 6em;
+}
+.osdTextContainer {
+    margin: 0 !important;
+    margin-top: 0.2em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+/*Fix top right user icon when using a profile image*/
+.headerUserButtonRound {
+  border-radius: 50px !important;
+}
+
+/*Improve some menu alignments*/
+.navMenuOptionText {
+    margin-top: 0;
+}
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
+.listItem {
+  padding-left: 1em;
+}
