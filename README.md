@@ -67,13 +67,8 @@ fixes.css contains various small tweaks all over the JF UI, an alignment here, a
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
 ```
 
-fixes_new.css contains small fixes for Jellyfin 10.11.0 ( left-padding on details pages )
-
-```css
-@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes_new.css');
-```
-
 <br />
+
 ### 2. Required
 
 These lines are required.
