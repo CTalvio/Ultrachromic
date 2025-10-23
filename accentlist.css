@@ -34,7 +34,8 @@ progress::-moz-progress-bar {
 progress::-webkit-progress-value {
   background-color: rgba(var(--accent),0.75);
 }
-.taskProgressInner {
+.taskProgressInner,
+.sliderMarker.watched {
   background: rgba(var(--accent),0.75) !important;
 }
 

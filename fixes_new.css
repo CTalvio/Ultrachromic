@@ -1,0 +1,35 @@
+/*Accommodate ultrawide aspect ratios*/
+@media (min-aspect-ratio: 1.98/1) {
+  .detailImageContainer .card {
+    width: 21vw !important ;
+  }
+  .detailPagePrimaryContainer {
+    padding-left: 0.00vw !important;
+  }
+  .detailRibbon {
+    padding-left: 28.45vw !important;
+  }
+  .detailPagePrimaryContent {
+    padding-left: 28.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 28.45vw !important;
+  }
+}
+@media (min-aspect-ratio: 2.7/1) {
+  .detailImageContainer .card {
+    width: 16vw !important;
+  }
+  .detailPagePrimaryContainer {
+    padding-left: 0.00vw !important;
+  }
+  .detailRibbon {
+    padding-left: 23.45vw !important;
+  }
+  .detailPagePrimaryContent {
+    padding-left: 23.45vw !important;
+  }
+  .detailPageContent {
+    padding-left: 23.45vw !important;
+  }
+}
