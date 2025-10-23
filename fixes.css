@@ -42,7 +42,10 @@
   .detailImageContainer .card {
     width: 21vw !important ;
   }
-  .detailPagePrimaryContainer {
+  .detailRibbon {
+    padding-left: 28.45vw !important;
+  }
+  .detailPagePrimaryContent {
     padding-left: 28.45vw !important;
   }
   .detailPageContent {
@@ -53,7 +56,10 @@
   .detailImageContainer .card {
     width: 16vw !important;
   }
-  .detailPagePrimaryContainer {
+  .detailRibbon {
+    padding-left: 23.45vw !important;
+  }
+  .detailPagePrimaryContent {
     padding-left: 23.45vw !important;
   }
   .detailPageContent {
