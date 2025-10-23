@@ -13,10 +13,6 @@
   padding-bottom: .5em;
 }
 
-.layout-desktop .detailImageContainer .card {
-  top: 18vh;
-}
-
 #itemDetailPage .detailLogo {
     position: static;
     margin-left: 32.5%;
