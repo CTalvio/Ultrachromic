@@ -292,6 +292,8 @@ There are some manual options you can define if you want, after the import lines
 :root {--rounding: 12px;}
 ```
 
+<br />
+
 ### 15. Smart TV Performance Optimization (Tizen / WebOS)
 
 If you experience UI lag, micro-stutters, or crashes on low-end Smart TVs (like Samsung Tizen or LG WebOS) after prolonged use, you can use the `tv.css` module. It drastically reduces GPU/CPU load and prevents memory leaks by disabling expensive blur calculations and heavy animations, prioritizing smooth remote control navigation.
