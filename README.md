@@ -292,6 +292,16 @@ There are some manual options you can define if you want, after the import lines
 :root {--rounding: 12px;}
 ```
 
+### 15. Smart TV Performance Optimization (Tizen / WebOS)
+
+If you experience UI lag, micro-stutters, or crashes on low-end Smart TVs (like Samsung Tizen or LG WebOS) after prolonged use, you can use the `tv.css` module. It drastically reduces GPU/CPU load and prevents memory leaks by disabling expensive blur calculations and heavy animations, prioritizing smooth remote control navigation.
+
+**IMPORTANT:** Do **not** place this in the server-wide "Dashboard > General > Custom CSS" field, otherwise it will disable visual effects for all your desktop and mobile clients. You must add this line exclusively to the **User Profile Settings** (or Client Settings) directly on your TV client.
+
+```css
+@import url('[https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/tv.css](https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/tv.css)');
+```
+
 <br />
 
 ### Extras
