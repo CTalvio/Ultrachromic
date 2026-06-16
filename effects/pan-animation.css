@@ -1,59 +1,33 @@
-@keyframes backgroundScroll {
-  0% {
-    background-position: 99% 1%; opacity: 0;
-  }
-  2% {
-    opacity: 1;
-  }
-  20% {
-    background-position: 1% 50%;
-  }
-  40% {
-    background-position: 99% 99%;
-  }
-  60% {
-    background-position: 1% 1%;
-  }
-  80% {
-    background-position: 50% 99%;
-  }
-  100% {
-    background-position: 99% 1%;
-  }
+.backdropImage {
+  will-change: transform;
+  transform: translateZ(0); 
 }
 
+@keyframes backgroundScroll {
+  0% { transform: scale(1.15) translate3d(2%, 2%, 0); opacity: 0; }
+  2% { opacity: 1; }
+  20% { transform: scale(1.15) translate3d(-2%, 0%, 0); }
+  40% { transform: scale(1.15) translate3d(2%, -2%, 0); }
+  60% { transform: scale(1.15) translate3d(-2%, 2%, 0); }
+  80% { transform: scale(1.15) translate3d(0%, -2%, 0); }
+  100% { transform: scale(1.15) translate3d(2%, 2%, 0); opacity: 0; }
+}
 
 @keyframes backgroundScrollmob {
-  0% {
-    background-position: 99% 1%; opacity: 0;
-  }
-  12% {
-    opacity: 1;
-  }
-  88% {
-    opacity: 1;
-  }
-  100% {
-    background-position: 50% 50%; opacity: 0;
-  }
+  0% { transform: scale(1.15) translate3d(2%, 2%, 0); opacity: 0; }
+  12% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { transform: scale(1.15) translate3d(0%, 0%, 0); opacity: 0; }
 }
-
-
 
 @media all and (min-width: 100em){
   .backdropImage {
-    background-size: 150% 150%;
-    background-position: 99% 1%;
-    animation: backgroundScroll 630s ease;
-    animation-iteration-count: infinite;
+    animation: backgroundScroll 630s ease infinite;
   }
 }
 
 @media all and (max-width: 100em){
   .backdropImage {
-    /*background-size: 150% 150%;*/
-    background-position: 99% 1%;
-    animation: backgroundScrollmob 25s ease;
-    animation-iteration-count: infinite;
+    animation: backgroundScrollmob 25s ease infinite;
   }
 }
