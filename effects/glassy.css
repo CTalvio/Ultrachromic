@@ -1,5 +1,21 @@
 @supports (backdrop-filter: blur(15px)) {
   .skinHeader-withBackground,
+  .css-fknfom,
+  .dialog,
+  .mainDrawer,
+  .toast,
+  .appfooter,
+  .paper-icon-button-light:hover,
+  #itemDetailPage .itemProgressBar,
+  #dashboardPage .backgroundProgress > div,
+  .cardOverlayButtonIcon,
+  .indicator {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+  }
+
+  .skinHeader-withBackground,
   .css-fknfom {
     backdrop-filter: blur(15px);
   }
@@ -20,7 +36,7 @@
       background-color: rgba(0, 0, 0, 0.35) !important;
     }
     .cardOverlayButtonIcon {
-    backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
     }
   }
   .indicator {

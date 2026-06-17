@@ -146,7 +146,7 @@ progress::-webkit-progress-value {
 .fab,
 a[data-role="button"] {
   background: rgba(40, 40, 40, 0.8) !important;
-	transition: all 0.2s !important;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 .raised:hover,
 .fab:hover,

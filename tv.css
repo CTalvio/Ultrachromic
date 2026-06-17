@@ -1,0 +1,31 @@
+.backdropImage {
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important; 
+  filter: blur(12px) saturate(120%) contrast(120%) brightness(40%) !important;
+}
+
+.cardBox {
+  will-change: transform;
+  transition: transform 0.2s ease, border 0.2s ease !important;
+}
+
+.skinHeader-withBackground,
+.css-fknfom,
+.dialog,
+.mainDrawer,
+.toast,
+.appfooter,
+.cardOverlayButtonIcon,
+.indicator {
+  will-change: auto !important;
+  transform: none !important;
+  backface-visibility: visible !important;
+}
+
+.card.show-animation:focus > .cardBox,
+.card:focus > .cardBox {
+  box-shadow: 0 0 10px rgba(var(--accent), 0.8) !important;
+  border: 2px solid rgba(var(--accent), 1) !important;
+  transform: scale(1.02) !important; 
+}
