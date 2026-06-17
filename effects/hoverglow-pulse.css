@@ -1,0 +1,38 @@
+/* ========================================================
+   hoverglow-pulse.css (Crash-Optimised Version)
+   ======================================================== */
+
+/* INTENSIFIED GLOW EFFECT WITH FORCEFUL PULSE ENGINE */
+/* FIXED SELECTORS: Now targeting ONLY the explicit containers, avoiding menu sub-items */
+.cardBox:hover > .cardScalable .cardOverlayContainer, 
+div.dialog.dialog-open,
+body > .toast,
+.raised.homeLibraryButton:hover {
+  /* The border layout */
+  border: solid 1.5px rgb(var(--accent)) !important;
+  overflow: visible !important;
+
+  /* Infinite looping rhythm time */
+  animation: slowGlowPulse 2.5s infinite ease-in-out !important;
+}
+
+/* Ensure the outer card frames never clip or truncate the pulsing glow */
+.cardScalable, .cardBox {
+  overflow: visible !important;
+}
+
+/* Define the slow glow pulsation mechanics */
+@keyframes slowGlowPulse {
+  0%, 100% {
+    box-shadow: 0px 0px 0px rgb(var(--accent)), 
+                0px 0px 0px rgb(var(--accent)), 
+                0px 0px 0px rgba(var(--accent), 0.6) !important;
+    border-color: rgb(var(--accent)) !important;
+  }
+  50% {
+    box-shadow: 0px 0px 10px rgb(var(--accent)), 
+                0px 0px 12px rgba(var(--accent), 0.8), 
+                0px 0px 14px rgba(var(--accent), 0.4) !important;
+    border-color: rgba(var(--accent), 0.8) !important;
+  }
+}
