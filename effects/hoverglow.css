@@ -1,22 +1,26 @@
-/*Glow accent on hover*/
-.raised.homeLibraryButton {
-    box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
-    border: solid 1px rgba(var(--accent),0) !important;
-}
-.cardOverlayContainer:hover,
-.dialog,
-.toast,
+/* ========================================================
+   hoverglow.css (Static)
+   ======================================================== */
+
+/* INTENSIFIED GLOW EFFECT */
+/* FIXED SELECTORS: Now targeting ONLY explicit layout boundaries to prevent freezes */
+.cardBox:hover > .cardScalable .cardOverlayContainer,
+div.dialog.dialog-open,
+body > .toast,
 .raised.homeLibraryButton:hover {
-  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
+  /* Stacked box-shadows: a sharp inner glow, a thick intense mid-glow, and a wide ambient glow */
+  box-shadow: 0px 0px 4px rgb(var(--accent)), 
+              0px 0px 8px rgb(var(--accent)), 
+              0px 0px 12px rgba(var(--accent), 0.6) !important;
+  
+  /* Solid border with 100% opacity to fight against bright white poster art */
+  border: solid 2px rgb(var(--accent)) !important;
+  
+  /* CRITICAL: Allows the outer glow to bleed past the borders without being cut off */
+  overflow: visible !important;
 }
-.cardOverlayContainer {
-  border: solid 1px rgba(var(--accent),0.0) !important;
-}
-.drawer-open {
-    box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
-    border-right: solid 1px rgba(var(--accent), 1) !important;
-}
-.cardBox:hover .cardContent {
-    box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
+
+/* Ensure the outer card frames never clip or truncate your glowing edges */
+.cardScalable, .cardBox {
+  overflow: visible !important;
 }
