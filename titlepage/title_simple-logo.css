@@ -1,65 +1,55 @@
-.detailSectionContent { max-width: 66em; }
-.trackSelections { max-width: 22em; }
-.detailPagePrimaryContainer { background: transparent !important; }
+.detailPageWrapperContainer {
+    max-width: 66em;
+}
 
-.layout-desktop .itemBackdrop,
-.layout-tv .itemBackdrop {
+#itemBackdrop {
     display: none !important;
 }
 
-.layout-desktop .detailRibbon,
-.layout-tv .detailRibbon {
+.detailRibbon {
     background: transparent !important;
     margin-top: 13vh;
 }
 
-.layout-desktop .detailImageContainer .card {
-    top: 18vh;
-}
-
-.detailLogo { display: none; }
-
-.detailPageWrapperContainer .detailLogo {
+/* Базові налаштування для логотипа */
+#itemDetailPage .detailLogo {
     display: block !important;
+    position: static !important;
     -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75)); 
-    flex-shrink: 0;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
     background-repeat: no-repeat !important;
+    background-size: contain !important;
 }
 
-.detailPageWrapperContainer .nameContainer {
+/* Знищення стандартного текстового заголовка */
+#itemDetailPage .nameContainer {
     display: none !important;
 }
 
-.hide + .detailPageWrapperContainer .itemName {
-    display: block !important;
-}
-
-.itemName { margin: .5em 0 !important; }
-
-.layout-desktop .detailPageWrapperContainer .detailLogo {
+/* --- ПК (Desktop) --- */
+.layout-desktop #itemDetailPage .detailLogo {
     margin-left: 32.5%;
     margin-top: 8vh;
     margin-bottom: -12vh;
-    background-position: 0 50%;
+    width: 35vw;
+    height: 12vh;
+    background-position: left center !important;
 }
 
-.layout-mobile .detailPageWrapperContainer .detailLogo {
-    margin: 2vh auto !important; 
-    height: 12vh !important;
+/* --- МОБІЛЬНІ (Android / iOS) --- */
+.layout-mobile #itemDetailPage .detailLogo {
+    margin: 2vh auto !important;
     width: 90vw !important;
+    height: 10vh !important;
     background-position: center !important;
-    background-size: contain !important;
 }
 
+/* --- ТЕЛЕВІЗОР (Жорстке центрування) --- */
 .layout-tv #itemDetailPage .detailLogo {
     position: relative !important;
-    margin-top: 2vh !important;
-    margin-left: 33% !important;
-    margin-bottom: 2vh !important;
-    width: 50vw !important;
-    height: 12vh !important;
-    background-position: left center !important;
-    background-size: contain !important;
-}
+    inset: auto !important; /* Знищуємо старі координати, якщо вони були */
+    margin: 3vh auto 2vh auto !important; /* Відступи зверху/знизу і центрування по боках */
+    width: 60vw !important; /* Ширина блоку */
+    height: 15vh !important; /* Висота блоку */
+    background-position: center !important; /* Малюємо лого рівно по центру контейнера */
 }
