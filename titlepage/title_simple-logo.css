@@ -3,7 +3,8 @@
 .detailPagePrimaryContainer { background: transparent !important; }
 
 .layout-desktop .itemBackdrop,
-.layout-tv .itemBackdrop {
+.layout-tv .itemBackdrop,
+.layout-mobile .itemBackdrop {
     display: none !important;
 }
 
@@ -19,8 +20,7 @@
 
 .detailLogo { display: none; }
 
-#itemDetailPage .detailLogo {
-    position: static;
+.detailPageWrapperContainer .detailLogo {
     display: block !important;
     -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75)); 
@@ -28,10 +28,7 @@
     background-repeat: no-repeat !important;
 }
 
-.detailPagePrimaryContainer .nameContainer,
-.detailPagePrimaryContainer h1.itemName,
-.detailPagePrimaryContainer .itemName.parentNameLast,
-.detailPagePrimaryContainer .itemName.parentName {
+.detailPageWrapperContainer .nameContainer {
     display: none !important;
 }
 
@@ -41,25 +38,29 @@
 
 .itemName { margin: .5em 0 !important; }
 
-.layout-desktop #itemDetailPage .detailLogo {
+.layout-desktop .detailPageWrapperContainer .detailLogo {
+    position: relative !important;
+    inset: auto !important;
     margin-left: 32.5%;
     margin-top: 8vh;
     margin-bottom: -12vh;
     background-position: 0 50%;
 }
 
-.layout-mobile #itemDetailPage .detailLogo {
+.layout-mobile .detailPageWrapperContainer .detailLogo {
+    position: relative !important;
+    inset: auto !important;
     margin: 2vh auto !important; 
-    height: 12vh !important;
-    width: 90vw !important;
+    height: 10vh !important;
+    width: 85vw !important;
     background-position: center !important;
     background-size: contain !important;
+    object-fit: contain !important;
 }
 
-.layout-tv #itemDetailPage .detailLogo {
+.layout-tv .detailPageWrapperContainer .detailLogo {
     position: relative !important;
-    top: auto !important;
-    left: auto !important;
+    inset: auto !important; 
     margin: 0 0 2vh 0 !important;
     height: 12vh !important;
     width: 50vw !important;
