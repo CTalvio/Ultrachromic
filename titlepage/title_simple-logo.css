@@ -25,16 +25,18 @@
     position: static;
     display: block !important;
     -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75)); 
     flex-shrink: 0;
     background-repeat: no-repeat !important;
 }
 
-#itemDetailPage .itemName.infoText.parentNameLast,
-#itemDetailPage .itemName.infoText.parentName {
+.detailPagePrimaryContainer h1.itemName,
+.detailPagePrimaryContainer .itemName.parentNameLast,
+.detailPagePrimaryContainer .itemName.parentName {
     display: none !important;
 }
-.hide+.detailPageWrapperContainer .itemName {
+
+.hide + .detailPageWrapperContainer .itemName {
     display: block !important;
 }
 .itemName {
@@ -50,16 +52,17 @@
 
 .layout-mobile #itemDetailPage .detailLogo {
     margin: 2vh auto !important; 
-    max-height: 12vh !important;
-    max-width: 90% !important;
+    height: 12vh !important;
+    width: 90vw !important;
     background-position: center !important;
     background-size: contain !important;
 }
 
 .layout-tv #itemDetailPage .detailLogo {
-    margin: 2vh 0 !important;
-    max-height: 12vh !important;
-    max-width: 50vw !important;
+    margin: 0 0 2vh 0 !important;
+    height: 12vh !important;
+    width: 50vw !important;
     background-position: left center !important;
     background-size: contain !important;
+    object-fit: contain !important; 
 }
