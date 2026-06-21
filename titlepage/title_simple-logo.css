@@ -11,23 +11,24 @@
     margin-top: 13vh;
 }
 
-/* Базові налаштування для логотипа */
 #itemDetailPage .detailLogo {
     display: block !important;
-    position: static !important;
     -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
     background-repeat: no-repeat !important;
     background-size: contain !important;
 }
 
-/* Знищення стандартного текстового заголовка */
 #itemDetailPage .nameContainer {
     display: none !important;
 }
 
-/* --- ПК (Desktop) --- */
+.itemName {
+    margin: .5em 0 !important;
+}
+
 .layout-desktop #itemDetailPage .detailLogo {
+    position: static !important;
     margin-left: 32.5%;
     margin-top: 8vh;
     margin-bottom: -12vh;
@@ -36,8 +37,8 @@
     background-position: left center !important;
 }
 
-/* --- МОБІЛЬНІ (Android / iOS) --- */
 .layout-mobile #itemDetailPage .detailLogo {
+    position: static !important;
     margin: 2vh auto !important;
     width: 90vw !important;
     height: 10vh !important;
@@ -46,14 +47,14 @@
 
 .layout-tv #itemDetailPage .detailLogo {
     position: absolute !important;
-    top: 25vh !important;
-    left: calc(28vw + 4vw) !important;
+    top: 8vh !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translateX(-50%) !important;
     margin: 0 !important;
-    inset: auto !important;
     width: 60vw !important;
-    height: 15vh !important;
-    background-position: left center !important;
-    background-size: contain !important;
-    z-index: 10 !important;
-}
+    height: 18vh !important;
+    background-position: center !important;
+    z-index: 100 !important;
 }
