@@ -45,16 +45,24 @@
     background-position: center !important;
 }
 
+/* 1. Ховаємо старий текст */
+.layout-tv #itemDetailPage .nameContainer {
+    display: none !important;
+}
+
+/* 2. Робимо логотип "наліпкою" і ставимо куди треба */
 .layout-tv #itemDetailPage .detailLogo {
-    position: absolute !important;
-    top: 8vh !important;
-    left: 50% !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: translateX(-50%) !important;
+    display: block !important;
+    position: absolute !important; /* Вириваємо з потоку, щоб не давило на постер */
+    top: 20vh !important;  /* ВЕРТИКАЛЬ: збільшуй (напр. 25vh), щоб опустити нижче */
+    left: 33vw !important; /* ГОРИЗОНТАЛЬ: збільшуй (напр. 36vw), щоб відсунути правіше від постера */
+    width: 50vw !important;
+    height: 12vh !important;
     margin: 0 !important;
-    width: 60vw !important;
-    height: 18vh !important;
-    background-position: center !important;
-    z-index: 100 !important;
+    padding: 0 !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    z-index: 10 !important; /* Кладемо поверх усього */
+}
 }
