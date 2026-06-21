@@ -259,7 +259,7 @@ OR
 
 Additional eye candy. Make items glow on hover, make some UI elements glassy see-through. Pan animation animates the backdrop with a slow pan. The last one is a hacky way to turn the cover art into a backdrop on mobile, as it was removed in 10.7.0.
 
-Known issues: Pan-animation can cause flickering on chromium based browsers when the backdrop is also modified.
+~~Known issues: Pan-animation can cause flickering on chromium based browsers when the backdrop is also modified.~~ Fixed.
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/hoverglow.css');
@@ -279,7 +279,19 @@ AND/OR
 
 <br />
 
-### 14. Manual options
+### 14. Smart TV Performance Optimization (Tizen / WebOS)
+
+If you experience UI lag, micro-stutters, or crashes on low-end Smart TVs (like Samsung Tizen or LG WebOS) after prolonged use, you can use the `tv.css` module. It drastically reduces GPU/CPU load and prevents memory leaks by disabling expensive blur calculations and heavy animations, prioritizing smooth remote control navigation.
+
+**IMPORTANT:** Do **not** place this in the server-wide "Dashboard > General > Custom CSS" field, otherwise it will disable visual effects for all your desktop and mobile clients. You must add this line exclusively to the **User Profile Settings** directly on your TV client.
+
+```css
+@import url('(https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/tv.css)');
+```
+
+<br />
+
+### 15. Manual options
 
 There are some manual options you can define if you want, after the import lines add this short snippet of code, you can edit it to set anything you want as a login background, or modify how blurry or dark/light your backdrops are, as well as to set a custom accent color.
 
@@ -290,18 +302,6 @@ There are some manual options you can define if you want, after the import lines
 /*Accent and roundingd*/
 :root {--accent: 98, 121, 205;}
 :root {--rounding: 12px;}
-```
-
-<br />
-
-### 15. Smart TV Performance Optimization (Tizen / WebOS)
-
-If you experience UI lag, micro-stutters, or crashes on low-end Smart TVs (like Samsung Tizen or LG WebOS) after prolonged use, you can use the `tv.css` module. It drastically reduces GPU/CPU load and prevents memory leaks by disabling expensive blur calculations and heavy animations, prioritizing smooth remote control navigation.
-
-**IMPORTANT:** Do **not** place this in the server-wide "Dashboard > General > Custom CSS" field, otherwise it will disable visual effects for all your desktop and mobile clients. You must add this line exclusively to the **User Profile Settings** (or Client Settings) directly on your TV client.
-
-```css
-@import url('[https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/tv.css](https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/tv.css)');
 ```
 
 <br />
