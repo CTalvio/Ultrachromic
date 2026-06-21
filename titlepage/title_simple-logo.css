@@ -44,12 +44,16 @@
     background-position: center !important;
 }
 
-/* --- ТЕЛЕВІЗОР (Жорстке центрування) --- */
 .layout-tv #itemDetailPage .detailLogo {
-    position: relative !important;
-    inset: auto !important; /* Знищуємо старі координати, якщо вони були */
-    margin: 3vh auto 2vh auto !important; /* Відступи зверху/знизу і центрування по боках */
-    width: 60vw !important; /* Ширина блоку */
-    height: 15vh !important; /* Висота блоку */
-    background-position: center !important; /* Малюємо лого рівно по центру контейнера */
+    position: absolute !important;
+    top: 25vh !important;
+    left: calc(28vw + 4vw) !important;
+    margin: 0 !important;
+    inset: auto !important;
+    width: 60vw !important;
+    height: 15vh !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    z-index: 10 !important;
+}
 }
