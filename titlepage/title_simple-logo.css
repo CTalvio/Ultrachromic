@@ -1,48 +1,65 @@
-.detailPageWrapperContainer {
-    max-width: 66em;
-}
+.detailSectionContent { max-width: 66em; }
+.trackSelections { max-width: 22em; }
+.detailPagePrimaryContainer { background: transparent !important; }
 
-#itemBackdrop {
+.layout-desktop .itemBackdrop,
+.layout-tv .itemBackdrop {
     display: none !important;
 }
 
-.detailRibbon {
+.layout-desktop .detailRibbon,
+.layout-tv .detailRibbon {
     background: transparent !important;
     margin-top: 13vh;
 }
 
-#itemDetailPage .detailLogo {
+.layout-desktop .detailImageContainer .card {
+    top: 18vh;
+}
+
+.detailLogo { display: none; }
+
+.detailPageWrapperContainer .detailLogo {
     display: block !important;
-    position: static !important;
     -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    margin-bottom: -12vh;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75)); 
+    flex-shrink: 0;
     background-repeat: no-repeat !important;
+}
+
+.detailPageWrapperContainer .nameContainer {
+    display: none !important;
+}
+
+.hide + .detailPageWrapperContainer .itemName {
+    display: block !important;
+}
+
+.itemName { margin: .5em 0 !important; }
+
+.layout-desktop .detailPageWrapperContainer .detailLogo {
+    margin-left: 32.5%;
+    margin-top: 8vh;
+    margin-bottom: -12vh;
+    background-position: 0 50%;
+}
+
+.layout-mobile .detailPageWrapperContainer .detailLogo {
+    margin: 2vh auto !important; 
+    height: 12vh !important;
+    width: 90vw !important;
+    background-position: center !important;
     background-size: contain !important;
 }
 
-.layout-desktop #itemDetailPage .detailLogo {
-    margin-left: 32.5%;
-    margin-top: 8vh;
-    width: 35vw;
-    height: 12vh;
-}
-
 .layout-tv #itemDetailPage .detailLogo {
-    margin-left: 0 !important;
+    position: relative !important;
     margin-top: 2vh !important;
+    margin-left: 33% !important;
+    margin-bottom: 2vh !important;
     width: 50vw !important;
-    height: 15vh !important;
+    height: 12vh !important;
     background-position: left center !important;
+    background-size: contain !important;
 }
-
-.layout-mobile #itemDetailPage .detailLogo {
-    margin: 2vh auto !important;
-    width: 90vw !important;
-    height: 10vh !important;
-    background-position: center !important;
-}
-
-#itemDetailPage .nameContainer {
-    display: none !important;
 }
