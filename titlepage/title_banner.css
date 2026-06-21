@@ -1,14 +1,13 @@
-/*Alternate itempage*/
+.detailLogo { display: none !important; }
 
 .itemBackdrop {
-  height: 31vh !important;
-  display: inherit;
+    height: 31vh !important;
+    display: block !important; 
 }
-.detailLogo {
-  display: none;
-}
-.layout-desktop .detailRibbon {
-  margin-top: 0;
-  padding-top: .5em;
-  padding-bottom: .5em;
+
+.layout-desktop .detailRibbon,
+.layout-tv .detailRibbon {
+    margin-top: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
