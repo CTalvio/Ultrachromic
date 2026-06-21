@@ -20,7 +20,7 @@
 
 .detailLogo { display: none; }
 
-.detailPageWrapperContainer .detailLogo {
+#itemDetailPage .detailLogo {
     display: block !important;
     -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75)); 
@@ -38,7 +38,7 @@
 
 .itemName { margin: .5em 0 !important; }
 
-.layout-desktop .detailPageWrapperContainer .detailLogo {
+.layout-desktop #itemDetailPage .detailLogo {
     position: relative !important;
     inset: auto !important;
     margin-left: 32.5%;
@@ -47,7 +47,7 @@
     background-position: 0 50%;
 }
 
-.layout-mobile .detailPageWrapperContainer .detailLogo {
+.layout-mobile #itemDetailPage .detailLogo {
     position: relative !important;
     inset: auto !important;
     margin: 2vh auto !important; 
@@ -58,7 +58,7 @@
     object-fit: contain !important;
 }
 
-.layout-tv .detailPageWrapperContainer .detailLogo {
+.layout-tv #itemDetailPage .detailLogo {
     position: relative !important;
     inset: auto !important; 
     margin: 0 0 2vh 0 !important;
