@@ -1,68 +1,63 @@
-.detailPageWrapperContainer {
-    max-width: 66em;
+/*Tweak series/movie/album title screen*/
+
+.detailSectionContent {
+  max-width: 66em;
+}
+.trackSelections {
+  max-width: 22em;
+}
+.detailLogo {
+  display: none;
+}
+.detailPagePrimaryContainer {
+  background: rgba(0,0,0,0) !important;
+}
+.layout-desktop .detailRibbon {
+  background: rgba(0,0,0,0) !important;
 }
 
-#itemBackdrop {
-    display: none !important;
+/* Fix poster image not showing in high width windows */
+.layout-desktop .detailImageContainer .card {
+  top: 18vh;
 }
 
-.detailRibbon {
-    background: transparent !important;
+@media all and (min-width: 32em){
+  .itemBackdrop {
+    display: none;
+  }
+	.layout-desktop .detailRibbon {
     margin-top: 13vh;
+	}
 }
 
 #itemDetailPage .detailLogo {
-    display: block !important;
-    -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
+    position: static;
+    margin-left: 32.5%;
+    display: block;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    /*! filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75)); */
+    flex-shrink: 0;
+    background-position: 0 50%;
+    margin-top: 8vh;
+    margin-bottom: -12vh;
 }
 
-#itemDetailPage .nameContainer {
+.layout-mobile .detailLogo {
     display: none !important;
+}
+
+#itemDetailPage .itemName.infoText.parentNameLast {
+    display: none;
+}
+
+.hide+.detailPageWrapperContainer .itemName {
+    display: block !important;
 }
 
 .itemName {
     margin: .5em 0 !important;
 }
 
-.layout-desktop #itemDetailPage .detailLogo {
-    position: static !important;
-    margin-left: 32.5%;
-    margin-top: 8vh;
-    margin-bottom: -12vh;
-    width: 35vw;
-    height: 12vh;
-    background-position: left center !important;
-}
-
-.layout-mobile #itemDetailPage .detailLogo {
-    position: static !important;
-    margin: 2vh auto !important;
-    width: 90vw !important;
-    height: 10vh !important;
-    background-position: center !important;
-}
-
-/* 1. Ховаємо старий текст */
-.layout-tv #itemDetailPage .nameContainer {
-    display: none !important;
-}
-
-/* 2. Робимо логотип "наліпкою" і ставимо куди треба */
-.layout-tv #itemDetailPage .detailLogo {
-    display: block !important;
-    position: absolute !important; /* Вириваємо з потоку, щоб не давило на постер */
-    top: 20vh !important;  /* ВЕРТИКАЛЬ: збільшуй (напр. 25vh), щоб опустити нижче */
-    left: 33vw !important; /* ГОРИЗОНТАЛЬ: збільшуй (напр. 36vw), щоб відсунути правіше від постера */
-    width: 50vw !important;
-    height: 12vh !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background-position: left center !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    z-index: 10 !important; /* Кладемо поверх усього */
-}
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+    display: block;
 }

@@ -1,58 +1,46 @@
+/*Alternate itempage*/
+
 .itemBackdrop {
   height: 31vh !important;
-  display: block !important; 
+  display: inherit;
 }
-
-.layout-desktop .detailRibbon,
-.layout-tv .detailRibbon {
+.detailLogo {
+  display: none;
+}
+.layout-desktop .detailRibbon {
   margin-top: 0;
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
-.detailLogo {
-  display: none;
-}
-
 #itemDetailPage .detailLogo {
     position: static;
-    display: block !important;
-    -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
+    margin-left: 32.5%;
+    display: block;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    /*! filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75)); */
     flex-shrink: 0;
-    background-repeat: no-repeat !important;
+    background-position: 0 50%;
+    margin-top: -18vh;
+    margin-bottom: 2vh;
 }
 
-#itemDetailPage .itemName.infoText.parentNameLast,
-#itemDetailPage .itemName.infoText.parentName {
+.layout-mobile .detailLogo {
     display: none !important;
 }
+
+#itemDetailPage .itemName.infoText.parentNameLast {
+    display: none;
+}
+
 .hide+.detailPageWrapperContainer .itemName {
     display: block !important;
 }
+
 .itemName {
     margin: .5em 0 !important;
 }
 
-.layout-desktop #itemDetailPage .detailLogo {
-    margin-left: 32.5%;
-    margin-top: -18vh;
-    margin-bottom: 2vh;
-    background-position: 0 50%;
-}
-
-.layout-mobile #itemDetailPage .detailLogo {
-    margin: 2vh auto !important; 
-    max-height: 12vh !important;
-    max-width: 90% !important;
-    background-position: center !important;
-    background-size: contain !important;
-}
-
-.layout-tv #itemDetailPage .detailLogo {
-    margin: 2vh 0 !important;
-    max-height: 12vh !important;
-    max-width: 50vw !important;
-    background-position: left center !important;
-    background-size: contain !important;
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+    display: block;
 }

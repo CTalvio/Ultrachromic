@@ -1,17 +1,25 @@
-.detailSectionContent { max-width: 66em; }
-.trackSelections { max-width: 22em; }
+/*Tweak series/movie/album title screen*/
 
-.detailLogo { display: none !important; }
-
-.detailPagePrimaryContainer { background: transparent !important; }
-
-.layout-desktop .itemBackdrop,
-.layout-tv .itemBackdrop {
-    display: none !important;
+.detailSectionContent {
+  max-width: 66em;
 }
-
-.layout-desktop .detailRibbon,
-.layout-tv .detailRibbon {
-    background: transparent !important;
+.trackSelections {
+  max-width: 22em;
+}
+.detailLogo {
+  display: none;
+}
+.detailPagePrimaryContainer {
+  background: rgba(0,0,0,0) !important;
+}
+.layout-desktop .detailRibbon {
+  background: rgba(0,0,0,0) !important;
+}
+@media all and (min-width: 32em){
+  .itemBackdrop {
+    display: none;
+  }
+	.layout-desktop .detailRibbon {
     margin-top: 13vh;
+	}
 }
