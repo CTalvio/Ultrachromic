@@ -17,9 +17,7 @@
     top: 18vh;
 }
 
-.detailLogo {
-    display: none;
-}
+.detailLogo { display: none; }
 
 #itemDetailPage .detailLogo {
     position: static;
@@ -30,6 +28,7 @@
     background-repeat: no-repeat !important;
 }
 
+.detailPagePrimaryContainer .nameContainer,
 .detailPagePrimaryContainer h1.itemName,
 .detailPagePrimaryContainer .itemName.parentNameLast,
 .detailPagePrimaryContainer .itemName.parentName {
@@ -39,9 +38,8 @@
 .hide + .detailPageWrapperContainer .itemName {
     display: block !important;
 }
-.itemName {
-    margin: .5em 0 !important;
-}
+
+.itemName { margin: .5em 0 !important; }
 
 .layout-desktop #itemDetailPage .detailLogo {
     margin-left: 32.5%;
@@ -59,10 +57,13 @@
 }
 
 .layout-tv #itemDetailPage .detailLogo {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
     margin: 0 0 2vh 0 !important;
     height: 12vh !important;
     width: 50vw !important;
     background-position: left center !important;
     background-size: contain !important;
-    object-fit: contain !important; 
+    object-fit: contain !important;
 }
