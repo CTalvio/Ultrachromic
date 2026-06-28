@@ -13,7 +13,7 @@
   padding-bottom: .5em;
 }
 
-#itemDetailPage .detailLogo {
+.layout-desktop #itemDetailPage .detailLogo {
     position: static;
     margin-left: 32.5%;
     display: block;
@@ -23,6 +23,32 @@
     background-position: 0 50%;
     margin-top: -18vh;
     margin-bottom: 2vh;
+}
+
+.layout-tv #itemDetailPage .detailLogo {
+    display: block !important;
+    position: absolute !important;
+    top: 5vh !important;
+    left: 31vw !important;
+    width: 55vw !important;
+    height: 22vh !important;
+    margin: 0 !important;
+    background-position: left bottom !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    z-index: 10 !important;
+    pointer-events: none !important;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+}
+
+.layout-tv #itemDetailPage .detailRibbon {
+    margin-top: 18vh !important;
+}
+
+.layout-tv #itemDetailPage .nameContainer .parentNameLast,
+.layout-tv #itemDetailPage .nameContainer .originalTitle {
+    display: none !important; 
 }
 
 .layout-mobile .detailLogo {
@@ -44,4 +70,3 @@
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
     display: block;
 }
-
