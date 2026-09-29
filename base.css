@@ -48,6 +48,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
   position: relative !important;
   top: 0 !important;
   z-index: 5 !important;
+  margin-bottom: 0 !important;
 }
 .layout-mobile .detailImageContainer .card {
     position: absolute !important;
